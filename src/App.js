@@ -1,7 +1,7 @@
 import "./App.css";
-
+import Header from "./components/Header/Header";
+import Logo from "./components/Header/logo-v1.svg";
 function App() {
-  //const pathname = window.location.pathname;
 
   return (
       <Routes>
@@ -12,6 +12,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+
   );
 }
 
