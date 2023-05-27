@@ -1,11 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
+import Carousel from "./components/Content/Carousel/Carousel";
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Header />}></Route>
-    </Routes>
+    <>
+      <Header />
+      <Carousel />
+    </>
   );
 }
 

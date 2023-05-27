@@ -1,0 +1,40 @@
+header {
+  position: fixed;
+  transition: all 0.5s ease-out;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+}
+header .header_container {
+  display: flex;
+  align-items: center;
+  margin: 0 2%;
+  width: 90%;
+  height: 100%;
+  border-bottom: 1px solid gray;
+}
+header .logo {
+  display: flex;
+  flex-direction: column;
+}
+header .logo_first_childe {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: var(--font-family-open-sans);
+}
+header .logo_last_childe {
+  color: white;
+  font-size: 12.5px;
+  font-family: var(--font-family-open-sans);
+}
+header .navigation {
+  display: flex;
+  margin: 0 auto;
+}
+header .navigation li {
+  color: white;
+  margin: 0 5px;
+  font-size: 20px;
+  font-weight: 400;
+}
