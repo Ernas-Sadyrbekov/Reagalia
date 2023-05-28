@@ -81,9 +81,19 @@ select {
 
 /*reset.css*/
 
+
+/* fonts */
+
+@font-face {
+  font-family: "Jost";
+  src: url("./fonts/Jost-VariableFont_wght.ttf");
+}
+
+/* fonts */
+
 /* variables */
 
-:root {
+:root 
   /* font family */
   --font-family-jost: "Jost", sans-serif;
   --font-family-open-sans: "Open Sans", sans-serif;
@@ -126,15 +136,22 @@ html {
   color: var(--black-color-1);
 }
 
-#root > * {
+.main-section {
   width: 100%;
   margin-top: 120px;
+  overflow: hidden;
 }
 
-#root > * > * {
+.section__container {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 /*@media (max-width: 440px) {*/
