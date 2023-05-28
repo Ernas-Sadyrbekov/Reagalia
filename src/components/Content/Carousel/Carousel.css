@@ -1,9 +1,10 @@
-.carousel_section {
+.carousel_section .section__container {
   display: flex;
+  justify-content: space-between;
 }
 .left_section {
   position: relative;
-  width: 15% !important;
+
   /* margin-top: 2% !important; */
 }
 .left_section h2 {
@@ -29,6 +30,7 @@
   color: var(--gray-color-1);
   line-height: 180%;
   margin-top: 10%;
+  max-width: 250px;
 }
 .prev_btn,
 .next_btn {

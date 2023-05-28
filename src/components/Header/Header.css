@@ -7,6 +7,7 @@ header {
   background-color: black;
   margin-top: 0 !important;
   z-index: 5;
+  color: var(--white-color);
 }
 header .header_container {
   display: flex;
@@ -21,13 +22,11 @@ header .logo {
   flex-direction: column;
 }
 header .logo_first_childe {
-  color: white;
   font-size: 30px;
   font-weight: 600;
   font-family: var(--font-family-open-sans);
 }
 header .logo_last_childe {
-  color: white;
   font-size: 12.5px;
   font-family: var(--font-family-open-sans);
 }
@@ -36,8 +35,17 @@ header .navigation {
   margin: 0 auto;
 }
 header .navigation li {
-  color: white;
   margin: 0 5px;
   font-size: 20px;
   font-weight: 400;
+}
+header .header_contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+header .header_contacts span {
+  color: var();
+  font-size: 15px;
+  font-weight: 500;
 }
