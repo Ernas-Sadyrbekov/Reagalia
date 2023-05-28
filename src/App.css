@@ -81,6 +81,7 @@ select {
 
 /*reset.css*/
 
+
 /* fonts */
 
 @font-face {
@@ -92,10 +93,10 @@ select {
 
 /* variables */
 
-:root {
+:root 
   /* font family */
-  --font-family-jost: 'Jost', sans-serif;
-  --font-family-open-sans: 'Open Sans', sans-serif;
+  --font-family-jost: "Jost", sans-serif;
+  --font-family-open-sans: "Open Sans", sans-serif;
 
   /* font sizes */
   --xs-font-size: 14px;
@@ -122,7 +123,6 @@ select {
 }
 
 /* variables */
-
 
 /*styles*/
 
