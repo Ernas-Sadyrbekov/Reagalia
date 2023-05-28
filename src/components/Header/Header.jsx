@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="header_container">
+      <div className="header_container ">
         <div className="logo">
           <span className="logo_first_childe">Regalia</span>
           <span className="logo_last_childe">Ecommerse Store</span>
@@ -27,6 +27,10 @@ const Header = () => {
           <li>Наши товары</li>
           <li>Cвязаться</li>
         </ul>
+        <div className="header_contacts">
+          <span>+996(705)555-222</span>
+          <span>regalia@gmail.com</span>
+        </div>
       </div>
     </header>
   );
