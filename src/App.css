@@ -81,14 +81,12 @@ select {
 
 /*reset.css*/
 
-
-
 /* variables */
 
 :root {
   /* font family */
-  --font-family-jost: 'Jost', sans-serif;
-  --font-family-open-sans: 'Open Sans', sans-serif;
+  --font-family-jost: "Jost", sans-serif;
+  --font-family-open-sans: "Open Sans", sans-serif;
 
   /* font sizes */
   --xs-font-size: 14px;
@@ -116,7 +114,6 @@ select {
 
 /* variables */
 
-
 /*styles*/
 
 html {
@@ -127,6 +124,17 @@ html {
   font-family: var(--font-family-jost);
   font-size: var(--m-font-size);
   color: var(--black-color-1);
+}
+
+#root > * {
+  width: 100%;
+  margin-top: 120px;
+}
+
+#root > * > * {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*@media (max-width: 440px) {*/
