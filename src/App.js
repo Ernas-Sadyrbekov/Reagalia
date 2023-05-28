@@ -5,18 +5,17 @@ import Index from "./components/Content/Slider";
 
 import Header from "./components/Header/Header";
 import Carousel from "./components/Content/Carousel/Carousel";
+import Collection from "./components/Content/Colection";
 
 function App() {
 
 
   return (
     <>
-
         <Index />
-
-      <Header />
-      <Carousel />
-
+        <Header />
+        <Carousel />
+        <Collection />
     </>
   );
 }
