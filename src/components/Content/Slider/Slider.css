@@ -1,14 +1,13 @@
 .slider {
-    margin-top: 0 !important;
+    margin-top: 0;
     background-color: var(--black-color-2);
-    height: 90vh;
     color: var(--white-color);
 }
 
-.slider > div.container {
+.slider > div.section__container {
     display: flex;
     justify-content: space-between;
-    max-width: 100% !important;
+    max-width: 100%;
 }
 
 .slider__left-text {
@@ -17,12 +16,10 @@
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     color: var(--gray-transparent-color);
-    height: 90vh;
 }
 
 .slider__main {
-    margin-top: 225px;
-    margin-left: 68px;
+    margin: 264px 0 264px 68px;
 }
 
 .slider__main_discount {
@@ -95,26 +92,43 @@
 }
 
 .slider__images {
-    margin-top: 224px;
+    margin: 200px 70px;
     padding: 0 92px 0 65px;
-    overflow: hidden;
     height: 536px;
+    width: 646px;
+    position: relative;
 }
 
-.slider__images_img {
-    background-image: url("./img/homepage-v7-slide1-right-img.png");
+.slider__image {
     width: 646px;
     height: 536px;
     transform: translate(30px, 0px);
-    /*opacity: 0;*/
-    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider__image1 {
+    background-image: url("./img/homepage-v7-slide1-right-img.png");
+}
+
+.slider__image2 {
+    background-image: url("./img/homepage-v7-slide2-right-img.png");
+}
+
+.slider__image3 {
+    background-image: url("./img/homepage-v7-slide3-right-img.png");
 }
 
 .slider__social {
     display: flex;
     flex-direction: row;
     writing-mode: vertical-lr;
-    padding-top: 20vh;
+    padding-top: 34vh;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -127,11 +141,28 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: var(--gray-transparent-color);
+    color: var(--gray-color-1);
     padding: 24px 0px;
+    text-shadow: #000 0px 0px 15px;
 }
 
 .slider__social a:hover, .slider__social a:focus {
     color: var(--white-color);
+}
+
+@media (max-width: 1450px) {
+    .slider__left-text {
+        display: none;
+    }
+}
+
+@media (max-width: 1189px) {
+    .slider__images {
+        margin: 167px 70px;
+        padding: 0 92px 0 65px;
+        height: 536px;
+        width: 646px;
+        position: relative;
+    }
 }
 

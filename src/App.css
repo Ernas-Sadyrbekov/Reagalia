@@ -136,13 +136,13 @@ html {
   color: var(--black-color-1);
 }
 
-#root > * {
+.main-section {
   width: 100%;
   margin-top: 120px;
   overflow: hidden;
 }
 
-#root > * > * {
+.section__container {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
