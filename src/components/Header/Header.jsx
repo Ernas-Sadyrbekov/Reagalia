@@ -10,6 +10,7 @@ const Header = () => {
     header.style.height = "62px";
   }
   window.addEventListener("scroll", runOnScroll);
+
   return (
     <header>
       <div className="header_container">

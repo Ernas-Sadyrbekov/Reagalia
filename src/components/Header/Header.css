@@ -1,9 +1,12 @@
 header {
   position: fixed;
+  top: 0;
   transition: all 0.5s ease-out;
   height: 100px;
   width: 100%;
   background-color: black;
+  margin-top: 0 !important;
+  z-index: 5;
 }
 header .header_container {
   display: flex;

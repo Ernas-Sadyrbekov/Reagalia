@@ -8,8 +8,8 @@
 }
 
 /* Убираем внутренние отступы */
-ul,
-ol {
+ul[class],
+ol[class] {
   padding: 0;
 }
 
@@ -20,8 +20,8 @@ h2,
 h3,
 h4,
 p,
-ul,
-ol,
+ul[class],
+ol[class],
 li,
 figure,
 figcaption,
@@ -40,13 +40,13 @@ body {
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul,
-ol {
+ul[class],
+ol[class] {
   list-style: none;
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not() {
+a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
@@ -124,6 +124,17 @@ html {
   font-family: var(--font-family-jost);
   font-size: var(--m-font-size);
   color: var(--black-color-1);
+}
+
+#root > * {
+  width: 100%;
+  margin-top: 120px;
+}
+
+#root > * > * {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*@media (max-width: 440px) {*/

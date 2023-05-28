@@ -1,144 +1,74 @@
 import React from "react";
+import ProductCard from "../ProductCard/ProductCard";
 import "./Carousel.css";
+
 const Carousel = () => {
-  const gap = 16;
-
-  const carousel = document.getElementById("carousel"),
-    content = document.getElementById("content"),
-    next = document.getElementById("next"),
-    prev = document.getElementById("prev");
-
-  next.addEventListener("click", (e) => {
-    carousel.scrollBy(width + gap, 0);
-    if (carousel.scrollWidth !== 0) {
-      prev.style.display = "flex";
-    }
-    if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-      next.style.display = "none";
-    }
-  });
-  prev.addEventListener("click", (e) => {
-    carousel.scrollBy(-(width + gap), 0);
-    if (carousel.scrollLeft - width - gap <= 0) {
-      prev.style.display = "none";
-    }
-    if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-      next.style.display = "flex";
-    }
-  });
-
-  let width = carousel.offsetWidth;
-  window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
-
+  const card = [
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-1.png",
+      title: "Redmi Watch GPS",
+      id: 1,
+    },
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-2.png",
+      title: "Redmi Watch GPS",
+      id: 2,
+    },
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-3.png",
+      title: "Redmi Watch GPS",
+      id: 3,
+    },
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-4.png",
+      title: "Redmi Watch GPS",
+      id: 4,
+    },
+  ];
   return (
-    <div id="wrapper">
-      <div id="carousel">
-        <div id="content">
-          <img
-            class="item"
-            src="https://lh3.googleusercontent.com/0OynDYRoCaQWJIUyiOrUVeoub0mLNrDUcUZrJXF2WHQD77o-F_g2EnqZqVevO954WzD7mC5qTg=w512-h512-l90-rj"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/e2WxnnYi-F9oN4e0HdLosbq8nlxezfIlxAze2Ba0zE2JR8Es7j-4tNtXc9atwL51FHpaTMtDgmc=w544-h544-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/u6ldIRFJNC856cVGIRsj8It7kz8_0WSTsbdJEOdwjkzZg0lLnn2fFFdhdkCf85HG9O0s2Ak72g=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/nlaN4QEwrQivvVocTsTmksMAaLdiOYRI6fqWgEvr8HeszJdwyOLWSMtVZQkFP_jIO47g-sbZ=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/ivQK-VEDrumpUKopbgrZKKIP70_i0B0r1LLa7PM1ugqtWJcGDRt8yxndLAVKZn3k5djl6_SS2w=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/mH0AFUazs5cUFTMGmXW-yCIhqSgJHbYqt08OjMgON0-x_Q5nsxhOzVwMHyZJ1e3dziP_ja7_=w544-h544-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/H3yFco2fMxBxlQ7wZ7-_OUA8zO8hmqTU9Fik9_lwA6L5pCP_JcCI0OR2XmdAUPzZS_XsayPDnw=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/URcwKIhfH3rPoeSfAKfsuKTwZzyNUv_f9TiLL3Nddscv-cufGX3kh6G8FzkJHzvgWrxKMu_Y36A=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/BkARURW3Om0LVqlubLu1ziGrfKJrkYpSLEQflgH29lmTooSvXQjsHaWnwH1srAPlIMyJKjWqFIU=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/JMSMnpSyPX1ZTgodYRg5y98ZeZ5AUMBKf2TMRXD88_i6Qkj6-CwfkqmE0X4THMIPVydnYBNVUg=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            class="item"
-            src="https://lh3.googleusercontent.com/0OynDYRoCaQWJIUyiOrUVeoub0mLNrDUcUZrJXF2WHQD77o-F_g2EnqZqVevO954WzD7mC5qTg=w512-h512-l90-rj"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/e2WxnnYi-F9oN4e0HdLosbq8nlxezfIlxAze2Ba0zE2JR8Es7j-4tNtXc9atwL51FHpaTMtDgmc=w544-h544-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/u6ldIRFJNC856cVGIRsj8It7kz8_0WSTsbdJEOdwjkzZg0lLnn2fFFdhdkCf85HG9O0s2Ak72g=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/nlaN4QEwrQivvVocTsTmksMAaLdiOYRI6fqWgEvr8HeszJdwyOLWSMtVZQkFP_jIO47g-sbZ=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/ivQK-VEDrumpUKopbgrZKKIP70_i0B0r1LLa7PM1ugqtWJcGDRt8yxndLAVKZn3k5djl6_SS2w=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/mH0AFUazs5cUFTMGmXW-yCIhqSgJHbYqt08OjMgON0-x_Q5nsxhOzVwMHyZJ1e3dziP_ja7_=w544-h544-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/H3yFco2fMxBxlQ7wZ7-_OUA8zO8hmqTU9Fik9_lwA6L5pCP_JcCI0OR2XmdAUPzZS_XsayPDnw=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/URcwKIhfH3rPoeSfAKfsuKTwZzyNUv_f9TiLL3Nddscv-cufGX3kh6G8FzkJHzvgWrxKMu_Y36A=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/BkARURW3Om0LVqlubLu1ziGrfKJrkYpSLEQflgH29lmTooSvXQjsHaWnwH1srAPlIMyJKjWqFIU=w512-h512-l90-rj"
-            class="item"
-          />
-          <img
-            src="https://lh3.googleusercontent.com/JMSMnpSyPX1ZTgodYRg5y98ZeZ5AUMBKf2TMRXD88_i6Qkj6-CwfkqmE0X4THMIPVydnYBNVUg=w512-h512-l90-rj"
-            class="item"
-          />
+    <section className="carousel_section">
+      <div className="left_section">
+        <h2>Categories</h2>
+
+        <hr />
+
+        <p>
+          we have wide range of watch collection to present to our customers. We
+          have gigantic range of smart watches, smart phones, bands and many
+          other watches.
+        </p>
+
+        <button className="prev_btn">
+          <img src="https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-wrap-prev.png" />
+        </button>
+        <button className="next_btn">
+          <img src="https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-wrap-next.png" />
+        </button>
+      </div>
+      <div className="right_section">
+        <div className="carousel_content">
+          {card.map((item) => (
+            <div className="card">
+              <div className="card_img">
+                <img src={item.img} />
+              </div>
+
+              <span>
+                <span
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "20px",
+                  }}
+                >
+                  —{"     "}
+                </span>
+                {item.title}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
-      <button id="prev">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path fill="none" d="M0 0h24v24H0V0z" />
-          <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
-        </svg>
-      </button>
-      <button id="next">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path fill="none" d="M0 0h24v24H0V0z" />
-          <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
-        </svg>
-      </button>
-    </div>
+    </section>
   );
 };
 
