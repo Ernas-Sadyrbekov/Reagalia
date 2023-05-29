@@ -51,7 +51,8 @@ const Carousel = () => {
             {card.map((item) => (
               <div className="card">
                 <div className="card_img">
-                  <img src={item.img} />
+                  <img src={item.img} className="img_static" />
+                  <img src={item.img} className="hover_img" />
                 </div>
 
                 <span>

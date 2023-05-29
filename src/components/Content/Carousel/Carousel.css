@@ -56,12 +56,37 @@
   margin: auto;
   box-sizing: border-box;
 }
-.card_img {
-  background-color: #e2e2e2;
-  overflow: hidden;
 
+.card_img {
+  background-color: #f0f0f0;
+  overflow: hidden;
+  position: relative;
   padding: 38px 28px;
   margin-bottom: 20px;
+  height: 370px;
+}
+.card_img img {
+  position: absolute;
+}
+.card_img:hover .hover_img {
+  opacity: 1;
+  width: 100%;
+  top: 20px;
+  left: 0;
+  max-width: 100%;
+}
+.hover_img {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  top: -89px;
+  left: -124px;
+  width: 600px;
+  max-width: 600px;
+}
+.img_static {
+  width: 100%;
+  top: 20px;
+  left: 0;
 }
 
 .card span {
