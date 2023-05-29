@@ -1,6 +1,7 @@
 import React from "react";
 import "./Popular.css";
 import ProductCard from "../ProductCard/ProductCard";
+import { NavLink } from "react-router-dom";
 const Popular = () => {
   return (
     <section className="main-section main_section_popular">
@@ -8,13 +9,13 @@ const Popular = () => {
         <h2>Popular Products</h2>
 
         <div className="popular_cards">
-          <ProductCard />
+          <ProductCard max={8} />
         </div>
         <div className="slider__main_btn">
-          <a href="#" tabIndex="0">
+          <NavLink to="/all_products">
             <span>Все Продукты</span>
             <p></p>
-          </a>
+          </NavLink>
         </div>
       </div>
     </section>
