@@ -29,6 +29,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-size: 1em;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
