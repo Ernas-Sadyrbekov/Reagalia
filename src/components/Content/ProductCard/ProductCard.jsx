@@ -43,26 +43,70 @@ const ProductCard = () => {
       title: "boAt Airdopes 431 - Truly Wireless Earbuds",
       id: 8,
     },
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-popular-products-1.png",
+      title: "boAt Airdopes 402 - Wireless Earbuds",
+      id: 1,
+    },
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-popular-products-2.png",
+      title: "Apple Watch Nike Series 6 (GPS) 44mm",
+      id: 2,
+    },
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-popular-products-3.png",
+      title: "Mi Smart Band 5 Strap Orange",
+      id: 3,
+    },
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-popular-products-4.png",
+      title: "Samsung Gear VR with Controller",
+      id: 4,
+    },
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-popular-products-5.png",
+      title: "Apple Watch Series 3",
+      id: 5,
+    },
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-popular-products-6.png",
+      title: "Mi Smart Band 3i",
+      id: 6,
+    },
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-popular-products-7.png",
+      title: "Oculus Quest 2 Advanced All-In-One VR Headset",
+      id: 7,
+    },
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-popular-products-8.png",
+      title: "boAt Airdopes 431 - Truly Wireless Earbuds",
+      id: 8,
+    },
   ];
   return (
     <div className="popular_card_container">
-      {card.map((item) => (
-        <div className="popular_card">
-          <div className="popular_card_img">
-            <div className="slider__main_btn">
-              <a href="#" tabIndex="0">
-                <span>Связаться</span>
-                <p></p>
-              </a>
-            </div>
-            <source />
-            <img src={item.img} className="img_static" />
-            <img src={item.img} className="hover_img" />
-          </div>
+      {card.map((item, index) => {
+        if (index <= 7) {
+          return (
+            <div className="popular_card">
+              <div className="popular_card_img">
+                <div className="slider__main_btn">
+                  <a href="#" tabIndex="0">
+                    <span>Связаться</span>
+                    <p></p>
+                  </a>
+                </div>
+                <source />
+                <img src={item.img} className="img_static" />
+                <img src={item.img} className="hover_img" />
+              </div>
 
-          <span>{item.title}</span>
-        </div>
-      ))}
+              <span>{item.title}</span>
+            </div>
+          );
+        }
+      })}
     </div>
   );
 };

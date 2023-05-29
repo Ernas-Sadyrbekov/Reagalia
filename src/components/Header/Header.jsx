@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 const Header = () => {
   function runOnScroll() {
     const header = document.getElementsByTagName("header")[0];
@@ -21,7 +22,7 @@ const Header = () => {
         <ul className="navigation">
           <li>
             {" "}
-            <a href="#"> Главная</a>{" "}
+            <Link to="/"> Главная</Link>{" "}
           </li>
           <li>Контакты</li>
           <li>Наши товары</li>
