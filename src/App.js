@@ -11,22 +11,15 @@ import Collection from "./components/Content/Colection";
 import Advantages from "./components/Content/Advantages/Advantages";
 import Popular from "./components/Content/Popular/Popular";
 
-
 function App() {
   return (
     <>
-
-        <Index />
-        <Header />
-        <Carousel />
-        <Collection />
-
       <Index />
       <Header />
       <Carousel />
       <Advantages />
       <Popular />
-
+      <Collection />
     </>
   );
 }
