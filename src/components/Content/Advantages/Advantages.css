@@ -1,0 +1,26 @@
+.advantages_container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  width: 98%;
+  height: 130px;
+}
+.advantages_content {
+  display: flex;
+}
+.advantages_content img {
+  height: 40px;
+  align-self: center;
+  margin-right: 10px;
+}
+.advantages_container div h6 {
+  font-size: var(--l-font-size);
+  font-weight: 700;
+  color: var(--black-color-1);
+  margin-bottom: 0;
+}
+.advantages_container div span {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--gray-color-1);
+}
