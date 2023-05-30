@@ -1,0 +1,7 @@
+.all_prod_title {
+  font-size: var(--3xl-font-size);
+  font-weight: 900;
+  color: var(--black-color-1);
+  margin-left: 10px;
+  border-left: 3px solid green;
+}
