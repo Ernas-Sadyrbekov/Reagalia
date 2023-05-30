@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Slider.css";
 
-const Index = () => {
-  let [slideIndex, setSlideIndex] = useState("0");
+
+const Slider = ({toggleShowModal}) => {
+  let [slideIndex, setSlideIndex] = useState('0');
+
 
   useEffect(() => {
     showSlides();
@@ -48,10 +50,12 @@ const Index = () => {
           </p>
           <p className="slider__main_price">от $399.00</p>
           <div className="slider__main_btn">
-            <a href="#" tabIndex="0">
-              <span>Связаться</span>
-              <p></p>
-            </a>
+            <button className="blue-button" onClick={toggleShowModal}>
+              <a href="#" tabIndex="0">
+                <span>Связаться</span>
+                <p></p>
+              </a>
+            </ button>
           </div>
         </div>
         <div className="slider__images">
@@ -69,4 +73,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Slider;

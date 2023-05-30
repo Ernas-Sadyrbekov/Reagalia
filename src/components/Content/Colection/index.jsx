@@ -5,7 +5,7 @@ import latestSmartwatch from './img/latest-smartwatch-collection-img.png';
 import smartBand from './img/smart-band-collection-img.png';
 import vrGlasses from './img/best-collection-vr-glasses-img.png';
 
-const Collection = () => {
+const Collection = ({toggleShowModal}) => {
   return (
       <>
           <section className="main-section collection collection-green">
@@ -21,10 +21,12 @@ const Collection = () => {
                               COLLECTION
                           </h2>
                           <div className="slider__main_btn">
-                              <a href="#" tabIndex="0">
-                                  <span>заказать</span>
-                                  <p></p>
-                              </a>
+                              <button className="blue-button" onClick={toggleShowModal}>
+                                  <a href="#" tabIndex="0">
+                                      <span>заказать</span>
+                                      <p></p>
+                                  </a>
+                              </button>
                           </div>
                       </div>
                   </div>
@@ -47,10 +49,12 @@ const Collection = () => {
                               COLLECTION
                           </h2>
                           <div className="slider__main_btn">
-                              <a href="#" tabIndex="0">
-                                  <span>заказать</span>
-                                  <p></p>
-                              </a>
+                              <button className="blue-button" onClick={toggleShowModal}>
+                                  <a href="#" tabIndex="0">
+                                      <span>заказать</span>
+                                      <p></p>
+                                  </a>
+                              </button>
                           </div>
                       </div>
                   </div>
@@ -73,10 +77,12 @@ const Collection = () => {
                               COLLECTION
                           </h2>
                           <div className="slider__main_btn">
-                              <a href="#" tabIndex="0">
-                                  <span>заказать</span>
-                                  <p></p>
-                              </a>
+                              <button className="blue-button" onClick={toggleShowModal}>
+                                  <a href="#" tabIndex="0">
+                                      <span>заказать</span>
+                                      <p></p>
+                                  </a>
+                              </button>
                           </div>
                       </div>
                   </div>
@@ -99,10 +105,12 @@ const Collection = () => {
                               COLLECTION
                           </h2>
                           <div className="slider__main_btn">
-                              <a href="#" tabIndex="0">
-                                  <span>заказать</span>
-                                  <p></p>
-                              </a>
+                              <button className="blue-button" onClick={toggleShowModal}>
+                                  <a href="#" tabIndex="0">
+                                      <span>заказать</span>
+                                      <p></p>
+                                  </a>
+                              </button>
                           </div>
                       </div>
                   </div>

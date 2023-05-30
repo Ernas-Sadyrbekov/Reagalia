@@ -1,7 +1,9 @@
 import React from "react";
 import "./ProductCard.css";
 
-const ProductCard = ({ max, item }) => {
+
+const ProductCard = ({ max, item,toggleShowModal }) => {
+
   const card = [
     {
       img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-popular-products-1.png",
@@ -86,21 +88,25 @@ const ProductCard = ({ max, item }) => {
   ];
   return (
     <div className="popular_card_container">
+
       {card.map((item, index) => {
         if (index <= max) {
           return (
             <div className="popular_card">
               <div className="popular_card_img">
                 <div className="slider__main_btn">
+              <button className="blue-button" onClick={toggleShowModal}>
                   <a href="#" tabIndex="0">
                     <span>Связаться</span>
                     <p></p>
                   </a>
+         </button>
                 </div>
                 <source />
                 <img src={item.img} className="img_static" />
                 <img src={item.img} className="hover_img" />
               </div>
+
 
               <span>{item.title}</span>
             </div>
