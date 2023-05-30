@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import "./Carousel.css";
 
@@ -25,6 +25,19 @@ const Carousel = () => {
       id: 4,
     },
   ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % card.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? card.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <section className="carousel_section main-section">
       <div className="section__container">
@@ -39,33 +52,38 @@ const Carousel = () => {
             many other watches.
           </p>
 
-          <button className="prev_btn">
+          <button className="prev_btn" onClick={handlePrev}>
             <img src="https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-wrap-prev.png" />
           </button>
-          <button className="next_btn">
+          <button className="next_btn" onClick={handleNext}>
             <img src="https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-wrap-next.png" />
           </button>
         </div>
         <div className="right_section">
           <div className="carousel_content">
-            {card.map((item) => (
-              <div className="card">
-                <div className="card_img">
-                  <img src={item.img} className="img_static" />
-                  <img src={item.img} className="hover_img" />
-                </div>
+            {card.map((item, index) => (
+              <div
+                key={index}
+                className={`card ${index === currentIndex ? "active" : ""}`}
+              >
+                <div className="card">
+                  <div className="card_img">
+                    <img src={item.img} className="img_static" />
+                    <img src={item.img} className="hover_img" />
+                  </div>
 
-                <span>
-                  <span
-                    style={{
-                      fontWeight: "bold",
-                      fontSize: "20px",
-                    }}
-                  >
-                    —{"     "}
+                  <span>
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        fontSize: "20px",
+                      }}
+                    >
+                      —{"     "}
+                    </span>
+                    {item.title}
                   </span>
-                  {item.title}
-                </span>
+                </div>
               </div>
             ))}
           </div>
