@@ -1,58 +1,58 @@
 .collection {
-    background-color: var(--gray-color-2);
-    color: var(--white-color);
-    font-size: 62px;
-    line-height: 62px;
+  background-color: var(--gray-color-2);
+  color: var(--white-color);
+  font-size: 62px;
+  line-height: 62px;
 }
 
 .collection > div {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .collection__text {
-    display: flex;
-    background-color: var(--green-color);
-    padding: 235px 48px 48px 48px;
+  display: flex;
+  background-color: var(--green-color);
+  padding: 235px 48px 48px 48px;
 }
 
-.collection__text p  {
-    font-weight: 600;
+.collection__text p {
+  font-weight: 600;
 }
 
-.collection__text h2  {
-    font-weight: 300;
+.collection__text h2 {
+  font-weight: 300;
 }
 
 .collection-green .collection__text {
-    background-color: var(--green-color);
+  background-color: var(--green-color);
 }
 
 .collection-green .collection__text > * {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 .collection__img {
-    margin: -49px 0;
+  margin: -49px 0;
 }
 
 .collection .slider__main_btn a p {
-    width: 34px;
-    height: 27px;
-    background-image: url("./img/common-btn-green-arrow2.png");
-    margin-left: 14px;
+  width: 34px;
+  height: 27px;
+  background-image: url("./img/common-btn-green-arrow2.png");
+  margin-left: 14px;
 }
 
 .collection-black .collection__text {
-    background-color: var(--black-color-2);
+  background-color: var(--black-color-2);
 }
 
 .collection-black .collection__text > div > * {
-    align-self: flex-end;
-    text-align: end;
+  align-self: flex-end;
+  text-align: end;
 }
 
 .collection-black > div {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
