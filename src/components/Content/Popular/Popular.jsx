@@ -9,7 +9,7 @@ const Popular = () => {
         <h2>Popular Products</h2>
 
         <div className="popular_cards">
-          <ProductCard max={8} />
+          <ProductCard max={7} />
         </div>
         <div className="slider__main_btn">
           <NavLink to="/all_products">

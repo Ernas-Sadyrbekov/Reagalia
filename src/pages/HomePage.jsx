@@ -12,7 +12,7 @@ const HomePage = () => {
       <Carousel />
       <Advantages />
       <Popular />
-      <Collection />
+      {/* <Collection /> */}
     </div>
   );
 };

@@ -1,12 +1,16 @@
 .advantages_container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   background-color: #f0f0f0;
-  width: 98%;
-  height: 130px;
+}
+.advantages_container div {
+  background-color: #f0f0f0;
 }
 .advantages_content {
   display: flex;
+  width: 300px;
+  height: 130px;
 }
 .advantages_content img {
   height: 40px;

@@ -5,9 +5,10 @@
   justify-content: space-around;
 }
 .popular_card {
-  width: 23%;
+  width: 360px;
   height: 370px;
-  margin-top: 90px;
+
+  margin: 90px 1px 0 1px;
 }
 .popular_card_img {
   background-color: #f0f0f0;
@@ -69,4 +70,9 @@
   color: var(--black-color-1);
   font-size: var(--m-font-size);
   font-weight: 500;
+}
+@media (max-width: 400px) {
+  .popular_card {
+    width: 320px;
+  }
 }

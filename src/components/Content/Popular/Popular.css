@@ -13,3 +13,7 @@
 .main_section_popular .slider__main_btn span {
   color: var(--black-color-1);
 }
+.popular_cards {
+  display: flex;
+  flex-wrap: wrap;
+}
