@@ -154,6 +154,26 @@ a {
   cursor: pointer;
 }
 
+hr.line-hr {
+  border: none;
+  height: 2px;
+  width: 45px;
+  background-color: var(--green-color);
+  margin-left: 0;
+}
+
+.fs62 {
+  font-size: 62px;
+  line-height: 62px;
+  font-weight: 600;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: var(--black-color-1);
+}
+
 /*@media (max-width: 440px) {*/
 /*  :root {*/
 /*    --main-size: 16px;*/

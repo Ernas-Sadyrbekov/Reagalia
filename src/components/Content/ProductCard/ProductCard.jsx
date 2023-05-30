@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProductCard.css";
 
-const ProductCard = () => {
+const ProductCard = ({toggleShowModal}) => {
   const card = [
     {
       img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-popular-products-1.png",
@@ -50,10 +50,12 @@ const ProductCard = () => {
         <div className="popular_card">
           <div className="popular_card_img">
             <div className="slider__main_btn">
-              <a href="#" tabIndex="0">
-                <span>Связаться</span>
-                <p></p>
-              </a>
+              <button className="blue-button" onClick={toggleShowModal}>
+                <a href="#" tabIndex="0">
+                  <span>Связаться</span>
+                  <p></p>
+                </a>
+              </button>
             </div>
             <source />
             <img src={item.img} className="img_static" />

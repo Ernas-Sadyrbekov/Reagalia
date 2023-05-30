@@ -4,7 +4,7 @@ import React, {
 } from "react";
 import './Slider.css';
 
-const Index = () => {
+const Slider = ({toggleShowModal}) => {
   let [slideIndex, setSlideIndex] = useState('0');
 
   useEffect(() => {
@@ -39,10 +39,12 @@ const Index = () => {
           <p className="slider__main_description">Уникальная коллекция 2023 года с большой скидкой.</p>
           <p className="slider__main_price">от $399.00</p>
           <div className="slider__main_btn">
-            <a href="#" tabIndex="0">
-              <span>Связаться</span>
-              <p></p>
-            </a>
+            <button className="blue-button" onClick={toggleShowModal}>
+              <a href="#" tabIndex="0">
+                <span>Связаться</span>
+                <p></p>
+              </a>
+            </ button>
           </div>
         </div>
         <div className="slider__images">
@@ -60,4 +62,4 @@ const Index = () => {
   )
 }
 
-export default Index;
+export default Slider;
