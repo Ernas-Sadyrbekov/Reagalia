@@ -62,25 +62,23 @@ const Carousel = () => {
         <div className="right_section">
           <div className="carousel_content">
             {card.map((item, index) => (
-              <div key={index}>
-                <div className="card">
-                  <div className="card_img">
-                    <img src={item.img} className="img_static" />
-                    <img src={item.img} className="hover_img" />
-                  </div>
-
-                  <span>
-                    <span
-                      style={{
-                        fontWeight: "bold",
-                        fontSize: "20px",
-                      }}
-                    >
-                      —{"     "}
-                    </span>
-                    {item.title}
-                  </span>
+              <div className="card">
+                <div className="card_img">
+                  <img src={item.img} className="img_static" />
+                  <img src={item.img} className="hover_img" />
                 </div>
+
+                <span>
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: "20px",
+                    }}
+                  >
+                    —{"     "}
+                  </span>
+                  {item.title}
+                </span>
               </div>
             ))}
           </div>
