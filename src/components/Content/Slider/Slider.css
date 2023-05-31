@@ -197,12 +197,10 @@
     .slider__images {
         height: 263px;
         width: 323px;
-    }
-
-    .slider__image {
-        height: 263px;
-        width: 323px;
-    }
+    }.slider__image {
+         height: 263px;
+         width: 323px;
+     }
 
     .slider__images {
         margin: 168px 70px;
@@ -219,7 +217,7 @@
     }
 
     .slider__main {
-        margin: 14px 0px 14px 14px;
+        margin: 14px 0px 34px 14px;
     }
 
     .slider__social {
@@ -242,4 +240,3 @@
         width: 274px;
     }
 }
-
