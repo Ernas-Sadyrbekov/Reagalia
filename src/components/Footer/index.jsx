@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <>
-            <section className="footer main-section">
+            <section className="footer main-section" id='scroll-to-contacts'>
                 <div className="section__container">
                     <div className="footer__contacts">
                         <div
