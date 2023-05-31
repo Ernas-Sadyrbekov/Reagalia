@@ -17,3 +17,13 @@
   margin-left: 10px;
   border-left: 3px solid green;
 }
+
+@media (max-width: 600px) {
+  .section_popular {
+    display: block;
+  }
+  .contact_all {
+    margin-top: 20px;
+    display: block;
+  }
+}
