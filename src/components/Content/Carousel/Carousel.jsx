@@ -24,6 +24,11 @@ const Carousel = () => {
       title: "Redmi Watch GPS",
       id: 4,
     },
+    {
+      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-2.png",
+      title: "Redmi Watch GPS",
+      id: 2,
+    },
   ];
 
   // const [currentIndex, setCurrentIndex] = useState(0);

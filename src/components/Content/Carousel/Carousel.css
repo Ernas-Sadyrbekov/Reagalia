@@ -49,6 +49,7 @@
 .right_section {
   width: 77% !important;
   margin: 15px;
+  overflow-x: scroll;
 }
 .carousel_content {
   display: grid;
@@ -59,7 +60,7 @@
 }
 .card {
   height: 420px;
-  width: 270px;
+  width: 275px;
 }
 .card_img {
   background-color: #f0f0f0;
@@ -99,7 +100,7 @@
   color: var(--black-color-1);
 }
 
-@media (max-width: 1450px) {
+/* @media (max-width: 1450px) {
   .card:nth-child(4) {
     display: none;
   }
@@ -108,7 +109,7 @@
   .card:nth-child(3) {
     display: none;
   }
-}
+} */
 @media (max-width: 810px) {
   .carousel_section .section__container {
     display: block;
@@ -128,12 +129,13 @@
   }
   .right_section {
     margin: 20px 0 0 0;
+    max-width: 500px;
   }
 }
 @media (max-width: 600px) {
-  .card:nth-child(2) {
+  /* .card:nth-child(2) {
     display: none;
-  }
+  } */
   .carousel_section .section__container {
     max-width: 100%;
   }
