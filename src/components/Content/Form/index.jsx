@@ -17,46 +17,52 @@ const FormContact = () => {
                 <hr className='line-hr'/>
             </div>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Ваше имя: *</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                    />
+                <div className="form-buy__row">
+                    <div>
+                        <label htmlFor="name">Ваше имя: *</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="phone">Телефон: *</label>
+                        <input
+                            type="phone"
+                            id="phone"
+                            name="phone"
+                        />
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="phone">Телефон: *</label>
-                    <input
-                        type="phone"
-                        id="phone"
-                        name="phone"
-                    />
+                <div className="form-buy__row">
+                    <div>
+                        <label htmlFor="email">E-mail:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="address">Адрес:</label>
+                        <input
+                            type="address"
+                            id="address"
+                            name="address"
+                        />
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="email">E-mail:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                    />
+                <div className='form-buy__row form-buy__row-comment'>
+                    <div>
+                        <label htmlFor="comment">Комментарии к заказу:</label>
+                        <input
+                            type="comment"
+                            id="comment"
+                            name="comment"
+                        />
+                    </div><br/>
                 </div>
-                <div>
-                    <label htmlFor="address">Адрес:</label>
-                    <input
-                        type="address"
-                        id="address"
-                        name="address"
-                    />
-                </div>
-                <div>
-                    <label htmlFor="comment">Комментарии к заказу:</label>
-                    <input
-                        type="comment"
-                        id="comment"
-                        name="comment"
-                    />
-                </div><br/>
                 <div className="slider__main_btn">
                     <button>
                         <a tabIndex="0">
@@ -67,7 +73,7 @@ const FormContact = () => {
                 </div>
             </form>
         </div>
-);
+    );
 }
 
 

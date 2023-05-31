@@ -8,7 +8,6 @@
 .collection > div {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .collection__text {
@@ -17,11 +16,11 @@
   padding: 235px 48px 48px 48px;
 }
 
-.collection__text p {
+.collection__text p  {
   font-weight: 600;
 }
 
-.collection__text h2 {
+.collection__text h2  {
   font-weight: 300;
 }
 
@@ -53,6 +52,53 @@
   text-align: end;
 }
 
-.collection-black > div {
-  flex-direction: row-reverse;
+@media (max-width: 1097px) {
+  .collection {
+    font-size: 29px;
+    line-height: 29px;
+  }
+
+  .collection__text {
+    padding: 91px 25px 38px 25px;
+  }
+
+  .collection__img {
+    max-width: 333px;
+  }
+}
+
+@media (max-width: 595px) {
+  .collection > div {
+    position: relative;
+  }
+
+  .collection__img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .collection__text {
+    width: 100%;
+  }
+
+  .collection-black .collection__text {
+    justify-content: flex-end;
+  }
+
+  .collection-black .collection__img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  .collection__img {
+    margin: -122px 0;
+  }
+}
+
+@media (max-width: 498px) {
+  .collection__img {
+    max-width: 220px;
+  }
 }
