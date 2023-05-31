@@ -48,5 +48,41 @@
 }
 
 .modal .form-buy {
-    padding: 48px;
+    padding: 23px 25px 10px;
+}
+
+@media (max-width: 1024px) {
+    .modal .form-buy > div {
+        display: none;
+    }
+
+    .modal div.body {
+        display: none;
+    }
+}
+
+@media (max-width: 530px) {
+    .modal {
+        left: 10px;
+        right: 10px;
+        top: 10px;
+        margin: 0;
+    }
+
+    .modal .form-buy {
+        padding: 6px 7px 8px;
+    }
+
+    .modal .form-buy input {
+        width: 100%;
+        font-size: 12px;
+        padding: 3px;
+        margin: -2px 0 10px;
+    }
+
+    .modal .form-buy label {
+        margin: 0 16px -3px auto;
+        background-color: transparent;
+        box-shadow: none;
+    }
 }
