@@ -1,3 +1,15 @@
+.section_popular {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact_all {
+  display: inline-block;
+}
+.contact_all span {
+  color: var(--black-color-1);
+}
+
 .all_prod_title {
   font-size: var(--3xl-font-size);
   font-weight: 900;
