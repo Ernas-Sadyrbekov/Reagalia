@@ -10,7 +10,7 @@ const Header = () => {
     const logo2 = document.getElementsByClassName("logo_last_childe")[0];
     logo1.style.fontSize = "25px";
     logo2.style.fontSize = "10.5px";
-    header.style.height = "70px";
+    header.style.height = "60px";
   }
   window.addEventListener("scroll", runOnScroll);
 
