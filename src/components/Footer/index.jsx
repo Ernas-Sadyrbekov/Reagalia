@@ -2,6 +2,8 @@ import React from "react";
 import FormContact
     from "../Content/Form";
 import './Footer.css'
+import IconsSocial
+    from "../Content/IconsSocial";
 
 const Footer = () => {
 
@@ -17,6 +19,7 @@ const Footer = () => {
                             <p>regalia@gmail.com</p>
                             <p>г.Бишкек ул.Набережная д.22</p>
                             <p className='footer__left_p_number'>0 705 555 222</p>
+                            <IconsSocial/>
                         </div>
                     </div>
                     <div className="footer__form">
