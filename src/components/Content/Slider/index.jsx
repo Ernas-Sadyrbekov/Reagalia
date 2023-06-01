@@ -39,16 +39,14 @@ const Slider = ({toggleShowModal}) => {
           <span>SmartDevice</span>
         </div>
         <div className="slider__main">
-          <p className="slider__main_discount">Скидка 25% Дискаунт</p>
+          <p className="slider__main_discount">В наличии и по лучшей цене</p>
           <h1 className="slider__main_h1">
-            Смарт
-            <br />
-            Девайсы
+            Электронная<br />техника
           </h1>
           <p className="slider__main_description">
-            Уникальная коллекция 2023 года с большой скидкой.
+            Все девайсы от Apple, Samsung, JBL, Garmin, Xiaomi, LG, Huawei.
           </p>
-          <p className="slider__main_price">от $399.00</p>
+          <p className="slider__main_price">Отправка в любой регион</p>
           <div className="slider__main_btn">
             <button className="blue-button" onClick={toggleShowModal}>
               <a href="#" tabIndex="0">
@@ -65,9 +63,9 @@ const Slider = ({toggleShowModal}) => {
         </div>
       </div>
       <div className="slider__social">
-        <a href="#">Instagram</a>
+        <a href="#">Whatsapp</a>
         <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
+        <a href="#">Telegram</a>
       </div>
     </section>
   );

@@ -7,12 +7,7 @@ import Modal from "../components/Content/Modal";
 import Collection from "../components/Content/Colection/index";
 import { useState } from "react";
 
-const HomePage = () => {
-  const [showModal, setShowModal] = useState(false);
-
-  const toggleShowModal = () => {
-    setShowModal(!showModal);
-  };
+const HomePage = ({showModal, toggleShowModal}) => {
   return (
     <div>
       <Slider toggleShowModal={toggleShowModal} />
@@ -21,7 +16,6 @@ const HomePage = () => {
       <Advantages />
       <Popular toggleShowModal={toggleShowModal} />
       <Collection toggleShowModal={toggleShowModal} />
-      <Modal show={showModal} onCloseButtonClick={toggleShowModal} />
     </div>
   );
 };
