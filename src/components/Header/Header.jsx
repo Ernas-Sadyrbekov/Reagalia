@@ -17,6 +17,7 @@ const Header = ({toggleShowModal}) => {
   window.addEventListener("scroll", runOnScroll);
 
   return (
+
       <header>
         <section className="main-section header__section">
           <div className="section__container">
@@ -61,6 +62,9 @@ const Header = ({toggleShowModal}) => {
                         <li>
                           <Link to="/"> Главная</Link>
                         </li>
+   <li>
+                    <Link to="/about_us"> О нас</Link>
+                  </li>
                         <li>Контакты</li>
                         <li>
                           <Link to="/all_products">Наши товары</Link>
@@ -70,6 +74,7 @@ const Header = ({toggleShowModal}) => {
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>

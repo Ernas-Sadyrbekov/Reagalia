@@ -1,0 +1,42 @@
+.main_brand_section {
+  background-color: var(--gray-color-2);
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.brand_section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.brand_section h3 {
+  font-size: var(--3xl-font-size);
+  font-weight: 900;
+  color: var(--black-color-2);
+}
+.brand_section hr {
+  border: none;
+  height: 2px;
+  width: 45px;
+  color: var(--green-color);
+  background-color: var(--green-color);
+}
+.brand_section_logo {
+  position: absolute;
+  top: 80px;
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.logo_brand {
+  background-color: var(--white-color);
+  width: 230px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
