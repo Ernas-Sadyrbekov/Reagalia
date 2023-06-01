@@ -51,11 +51,24 @@
 .copyright {
   color: var(--white-color);
   height: 77px;
-  background-color: var(--green-color);
+  background-color: var(--black-color-1);
   text-align: center;
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-top: 7px;
+}
+
+.copyright > * {
+  padding: 1px 5px;
+}
+
+.copyright p {
+  font-weight: 500;
+}
+
+section.footer__map {
+  padding: 16px 0 0;
 }
 
 @media (max-width: 1276px) {
@@ -93,5 +106,9 @@
 
   .footer .footer__contacts {
     padding: 13px;
+  }
+
+  .copyright {
+    flex-direction: column;
   }
 }

@@ -6,20 +6,35 @@ import { Route, Routes } from "react-router-dom";
 import AllProducts from "./components/Content/AllProducts/AllProducts";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer";
+
+import {
+    useState
+} from "react";
+import Modal
+    from "./components/Content/Modal";
+
 import AboutUs from "./pages/AboutUs";
 
+
 function App() {
+    const [showModal, setShowModal] = useState(false);
+
+    const toggleShowModal = () => {
+        setShowModal(!showModal);
+    };
+
   return (
     <>
-      <Header />
+      <Header show={showModal} toggleShowModal={toggleShowModal} />
 
       <Routes>
         <Route path="/about_us" element=<AboutUs /> />
         <Route path="/all_products" element=<AllProducts /> />
-        <Route path="/" element=<HomePage /> />
+        <Route path="/" element=<HomePage toggleShowModal={toggleShowModal} /> />
       </Routes>
 
       <Footer />
+        <Modal show={showModal} onCloseButtonClick={toggleShowModal} />
     </>
   );
 }

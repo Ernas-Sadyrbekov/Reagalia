@@ -62,12 +62,24 @@
     padding: 91px 25px 38px 25px;
   }
 
+  .collection__text button {
+    margin-top: 14px;
+  }
+
   .collection__img {
     max-width: 333px;
   }
 }
 
 @media (max-width: 595px) {
+  .collection-green {
+    background-color: var(--green-color);
+  }
+
+  .collection-black {
+    background-color: var(--black-color-2);
+  }
+
   .collection > div {
     position: relative;
   }
@@ -80,6 +92,7 @@
 
   .collection__text {
     width: 100%;
+    padding: 91px 0px 38px 0px;
   }
 
   .collection-black .collection__text {
@@ -97,7 +110,7 @@
   }
 }
 
-@media (max-width: 498px) {
+@media (max-width: 560px) {
   .collection__img {
     max-width: 220px;
   }

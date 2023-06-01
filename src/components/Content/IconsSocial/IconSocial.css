@@ -1,0 +1,22 @@
+.icon-social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-social a {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 5px 4px;
+}
+
+.icon-social__whatsapp {
+    background-image: url("./img/whatsapp-svgrepo-com.svg");
+}
+
+.icon-social__telegramm {
+    background-image: url("./img/telegram-svgrepo-com.svg");
+}

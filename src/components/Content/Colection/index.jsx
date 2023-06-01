@@ -13,12 +13,11 @@ const Collection = ({toggleShowModal}) => {
                     <div className="collection__text">
                         <div>
                             <p>
-                                ДО 40% <br />
-                                СКИДКА
+                                САМЫЕ <br />
+                                ЛУЧШИЕ ЦЕНЫ
                             </p>
                             <h2>
-                                AIRDOPES<br/>
-                                COLLECTION
+                                В ДУБАИ<br />
                             </h2>
                             <div className="slider__main_btn">
                                 <button className="blue-button" onClick={toggleShowModal}>
@@ -36,7 +35,7 @@ const Collection = ({toggleShowModal}) => {
                 </div>
             </section>
 
-            <section className="main-section collection collection-black">
+            <section className="main-section collection">
                 <div className="section__container">
                     <div className="collection__img">
                         <img src={latestSmartwatch} alt="latest Smart watch"/>
@@ -44,13 +43,13 @@ const Collection = ({toggleShowModal}) => {
                     <div className="collection__text">
                         <div>
                             <p>
-                                ДО 33% <br />
-                                СКИДКА
+                                ГАРАНТИЯ <br />
+                                НА ВЕСЬ ТОВАР
                             </p>
-                            <h2>
-                                СМАРТЧАСЫ<br/>
-                                COLLECTION
-                            </h2>
+                            {/*<h2>*/}
+                            {/*    МИРОВОЙ<br />*/}
+                            {/*    СИТУАЦИИ*/}
+                            {/*</h2>*/}
                             <div className="slider__main_btn">
                                 <button className="blue-button" onClick={toggleShowModal}>
                                     <a href="#" tabIndex="0">
@@ -69,12 +68,12 @@ const Collection = ({toggleShowModal}) => {
                     <div className="collection__text">
                         <div>
                             <p>
-                                ДО 41% <br />
-                                СКИДКА
+                                ЛЮБОЙ<br />
+                                ОБЪЕМ
                             </p>
                             <h2>
-                                SMARTBAND<br/>
-                                COLLECTION
+                                И ВСЕ<br />
+                                РЕГИОНЫ
                             </h2>
                             <div className="slider__main_btn">
                                 <button className="blue-button" onClick={toggleShowModal}>
@@ -98,12 +97,12 @@ const Collection = ({toggleShowModal}) => {
                 <div className="collection__text">
                     <div>
                         <p>
-                            ДО 65% <br />
-                            СКИДКА
+                            АДАПТАЦИЯ<br />
+                            В РАМКАХ
                         </p>
                         <h2>
-                            VR-ОЧКИ<br/>
-                            COLLECTION
+                            МИРОВОЙ<br />
+                            СИТУАЦИИ
                         </h2>
                         <div className="slider__main_btn">
                             <button className="blue-button" onClick={toggleShowModal}>

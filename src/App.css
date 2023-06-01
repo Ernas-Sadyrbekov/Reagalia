@@ -173,6 +173,11 @@ button {
   border: none;
   background-color: transparent;
   color: var(--black-color-1);
+  padding: 0;
+}
+
+.fw400 {
+  font-weight: 600;
 }
 
 /*@media (max-width: 440px) {*/
