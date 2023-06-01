@@ -1,0 +1,37 @@
+.main_info_section {
+  background-color: var(--gray-color-2);
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.info_section {
+  display: flex;
+  justify-content: space-around;
+}
+.info_card {
+  width: 360px;
+  height: 260px;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info_card span {
+  margin: 10px 0 2px 0;
+
+  font-size: 46px;
+  font-weight: 700;
+  color: #000000;
+}
+.info_card h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  font-family: var(--font-family-open-sans);
+}
+.info_card img {
+  width: 70px;
+  height: 60px;
+}
