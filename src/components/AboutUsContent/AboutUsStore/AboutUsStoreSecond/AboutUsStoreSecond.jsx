@@ -4,7 +4,7 @@ const AboutUsStoreSecond = () => {
   return (
     <section className="main-section">
       <div className="section__container section_store_second">
-        <div className="about_us_left">
+        <div className="about_us_left_second">
           <h1>Our Store Expect Restless Amazing Support</h1>
           <hr />
           <p className="about_us_left_p1">
@@ -26,9 +26,7 @@ const AboutUsStoreSecond = () => {
           </div>
         </div>
         <div className="about_us_right">
-          <div className="about_us_right_img">
-            <img src="https://regaliae.jhkinfotech.in/wearable-gadgets/images/happycustomer-and-ourstore-img2.jpg" />
-          </div>
+          <img src="https://regaliae.jhkinfotech.in/wearable-gadgets/images/happycustomer-and-ourstore-img2.jpg" />
         </div>
       </div>
     </section>
