@@ -113,15 +113,19 @@
 }
 
 .slider__image1 {
-    background-image: url("./img/homepage-v7-slide1-right-img.png");
+    background-image: url("./img/watch.png");
 }
 
 .slider__image2 {
-    background-image: url("./img/homepage-v7-slide2-right-img.png");
+    background-image: url("./img/zyro-image (1).png");
 }
 
 .slider__image3 {
-    background-image: url("./img/homepage-v7-slide3-right-img.png");
+    background-image: url("./img/samsung.png");
+}
+
+.slider__image4 {
+    background-image: url("./img/apple.png");
 }
 
 .slider__social {

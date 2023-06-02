@@ -7,18 +7,18 @@ import Png3 from "./advantages3.png";
 const Advantages = () => {
   const advantages = [
     {
-      title: "Free Shipping & Return",
-      p: "Instant access to perfect support",
+      title: "Логистика",
+      p: "Отправкав любой регион",
       img: Png1,
     },
     {
-      title: "Customer Support 24/7",
-      p: "Free shipping on orders over $99",
+      title: "Подержка 24/7",
+      p: "Прямая связь без бюрократических процедур",
       img: Png2,
     },
     {
-      title: "100% Secure Payment",
-      p: "We ensure secure payment!",
+      title: "100% Надежность",
+      p: "Полный пакет документов",
       img: Png3,
     },
   ];
