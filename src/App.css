@@ -30,6 +30,7 @@ dl,
 dd {
   margin: 0;
   font-size: 1em;
+  font-family: system-ui;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
