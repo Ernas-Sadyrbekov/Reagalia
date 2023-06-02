@@ -19,9 +19,9 @@ const Footer = ({toggleShowModal}) => {
                             className="footer__left_section">
                             <span className="fs62">Контакты</span>
                             <hr className='line-hr' />
-                            <p>regalia@gmail.com</p>
-                            <p>г.Бишкек ул.Набережная д.22</p>
-                            <p className='footer__left_p_number'>0 705 555 222</p>
+                            <p>altairelec.fze@gmail.com</p>
+                            <p>P.O Box 16910, Dubai U.A.E</p>
+                            <p className='footer__left_p_number'>+971554870201</p>
                             <IconsSocial/>
                         </div>
                     </div>

@@ -1,18 +1,18 @@
 .section_store_second {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
 }
-.about_us_left {
+.about_us_left_second {
   width: 47%;
   position: relative;
+  margin-left: 30px;
 }
-.about_us_left h1 {
+.about_us_left_second h1 {
   font-size: var(--3xl-font-size);
   font-weight: 900;
   color: var(--black-color-2);
 }
-.about_us_left hr {
+.about_us_left_second hr {
   left: 0;
   position: absolute;
 
@@ -39,12 +39,17 @@
   font-family: var(--font-family-open-sans);
 }
 
-.about_us_left span {
+.about_us_left_second span {
   color: black;
 }
-
+.about_us_right {
+  display: inline-block;
+  overflow: hidden;
+}
+.about_us_right img {
+  transition: 1s;
+  display: block;
+}
 .about_us_right img:hoover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }

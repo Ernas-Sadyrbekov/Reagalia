@@ -3,6 +3,7 @@
 }
 .about_us_left {
   width: 50%;
+  margin-right: 30px;
   position: relative;
 }
 .about_us_left h1 {
