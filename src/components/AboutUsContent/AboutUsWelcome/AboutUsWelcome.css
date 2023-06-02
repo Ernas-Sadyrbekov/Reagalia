@@ -2,7 +2,7 @@
   display: flex;
 }
 .welcome_left_section {
-  width: 50vw;
+  width: 50%;
   position: relative;
 }
 .welcome_left_section span {
@@ -62,4 +62,45 @@
 }
 .welcome_right_section {
   width: 50vw;
+}
+
+@media (max-width: 800px) {
+  .welcome_section {
+    display: block;
+  }
+  .welcome_left_section {
+    width: 100%;
+    position: relative;
+  }
+  .welcome_right_section {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .our_vision_mission_section {
+    display: block;
+    margin: 0 auto;
+  }
+  .welcome_left_section span {
+    font-size: 15px;
+  }
+  .welcome_title {
+    font-size: 22px;
+  }
+  .welcome_firs_p {
+    margin: 15px 0 10px 0;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .welcome_second_p {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+    line-height: 22px;
+  }
+  .our_vision_mission_section h1 {
+    font-size: 17px;
+  }
+  .our_vision_mission_section li {
+    font-size: 15px;
+  }
 }

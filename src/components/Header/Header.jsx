@@ -4,11 +4,8 @@ import { Link } from "react-router-dom";
 import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-
-import IconsSocial
-  from "../Content/IconsSocial";
-const Header = ({toggleShowModal}) => {
-
+import IconsSocial from "../Content/IconsSocial";
+const Header = ({ toggleShowModal }) => {
   function runOnScroll() {
     const header = document.getElementsByTagName("header")[0];
     const logo1 = document.getElementsByClassName("logo_first_childe")[0];
@@ -20,66 +17,79 @@ const Header = ({toggleShowModal}) => {
   window.addEventListener("scroll", runOnScroll);
 
   return (
+    <header>
+      <section className="main-section header__section">
+        <div className="section__container">
+          <div className="header_container">
+            <Link to="/" className="logo">
+              <span className="logo_first_childe">ALTAIR</span>
+              <span className="logo_last_childe">ELECTRONIC FZE</span>
+            </Link>
+            <ul className="navigation">
+              <li
+                className="fw400"
+                onClick={() => {
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                {" "}
+                <Link to="/">Главная</Link>{" "}
+              </li>
+              <li
+                onClick={() => {
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                {" "}
+                <Link to="/all_products">Наши товары</Link>
+              </li>
+              <li
+                className="fw400"
+                onClick={() => {
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                {" "}
+                <Link to="/about_us">О нас</Link>
+              </li>
+              <li>
+                <a href="#scroll-to-contacts">Контакты</a>
+              </li>
+              <li className="fw400" onClick={toggleShowModal}>
+                Cвязаться
+              </li>
+            </ul>
 
-      <header>
-        <section className="main-section header__section">
-          <div className="section__container">
-            <div className="header_container">
-              <Link to='/' className="logo">
-                <span className="logo_first_childe">ALTAIR</span>
-                <span className="logo_last_childe">ELECTRONIC FZE</span>
-              </Link>
-              <ul className="navigation">
-                <li className='fw400' onClick={() => {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                }}>
-                  {" "}
-                  <Link to="/">Главная</Link>{" "}
-                </li>
-                <li onClick={() => {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                }}>
-                  {" "}
-                  <Link to="/all_products">Наши товары</Link>
-                </li>
-                <li className='fw400' onClick={() => {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                }}>
-                  {" "}
-                  <Link to="/about_us">О нас</Link>
-                </li>
-                <li>
-                  <a href="#scroll-to-contacts">Контакты</a>
-                </li>
-                <li className='fw400' onClick={toggleShowModal}>Cвязаться</li>
-              </ul>
+            <div className="header__contacts">
+              <p>+971554870201</p>
+              <IconsSocial />
+            </div>
 
-              <div className="header__contacts">
-                <p>+971554870201</p>
-                <IconsSocial/>
-
+            <div class="menu-wrap">
+              <input type="checkbox" class="toggler" />
+              <div class="hamburger">
+                <div></div>
               </div>
               <div class="menu">
                 <div>
                   <div>
-
                     <div>
                       <ul>
                         <li>
                           <Link to="/"> Главная</Link>
                         </li>
-   <li>
-                    <Link to="/about_us"> О нас</Link>
-                  </li>
+                        <li>
+                          <Link to="/about_us"> О нас</Link>
+                        </li>
                         <li>Контакты</li>
                         <li>
                           <Link to="/all_products">Наши товары</Link>

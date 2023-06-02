@@ -1,5 +1,4 @@
 .section_popular {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }

@@ -1,16 +1,23 @@
 .main_brand_section {
   background-color: var(--gray-color-2);
-  height: 500px;
+
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .brand_section {
+  margin: 100px 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  position: relative;
+}
+.brand_section_logo {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 .brand_section h3 {
   font-size: var(--3xl-font-size);
@@ -24,14 +31,6 @@
   color: var(--green-color);
   background-color: var(--green-color);
 }
-.brand_section_logo {
-  position: absolute;
-  top: 80px;
-  margin-top: 20px;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
 .logo_brand {
   background-color: var(--white-color);
   width: 230px;
@@ -39,4 +38,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 10px;
+}
+@media (max-width: 1000px) {
+  .brand_section_logo {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .logo_brand {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 800px) {
+  .brand_section_logo {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo_brand {
+    margin: 10px auto;
+  }
 }
