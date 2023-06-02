@@ -15,7 +15,7 @@ const AllProducts = ({ toggleShowModal }) => {
           </button>
         </div>
       </div>
-      <ProductCard max={1000} />
+      <ProductCard max={1000} toggleShowModal={toggleShowModal} />
     </section>
   );
 };

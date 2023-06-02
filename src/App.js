@@ -29,11 +29,11 @@ function App() {
 
       <Routes>
         <Route path="/about_us" element=<AboutUs /> />
-        <Route path="/all_products" element=<AllProducts /> />
+        <Route path="/all_products" element=<AllProducts toggleShowModal={toggleShowModal} /> />
         <Route path="/" element=<HomePage toggleShowModal={toggleShowModal} /> />
       </Routes>
 
-      <Footer />
+      <Footer toggleShowModal={toggleShowModal} />
         <Modal show={showModal} onCloseButtonClick={toggleShowModal} />
     </>
   );
