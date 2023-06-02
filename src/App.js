@@ -29,7 +29,7 @@ function App() {
 
       <Routes>
         <Route path="/about_us" element=<AboutUs /> />
-        <Route path="/all_products" element=<AllProducts /> />
+        <Route path="/all_products" element=<AllProducts toggleShowModal={toggleShowModal} /> />
         <Route path="/" element=<HomePage toggleShowModal={toggleShowModal} /> />
       </Routes>
 

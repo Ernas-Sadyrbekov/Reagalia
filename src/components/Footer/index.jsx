@@ -44,30 +44,37 @@ const Footer = ({toggleShowModal}) => {
             <section className="footer__navigation main-section">
                 <div className="section__container">
                     <div className="logo">
-                        <span className="footer__name">ALTAIR</span>
-                        <span className="footer__about">ELECTRONIC FZE</span>
+                        <p className="footer__name">ALTAIR</p>
+                        <p className="footer__about">ELECTRONIC FZE</p>
                     </div>
 
-                    <div className="navigation">
-                        <a className='fw400'>
-                            {" "}
-                            <Link to="/">Главная</Link>{" "}
-                        </a>
+                    <div className="footer__anchors">
+                        <span>
+                            <a className='fw400'>
+                                {" "}
+                                <Link to="/">Главная</Link>{" "}
+                            </a>
+                        </span>
+                        <span>
                         <a>
                             {" "}
                             <Link to="/all_products">Наши товары</Link>
                         </a>
+                        </span>
+                        <span>
                         <a className='fw400'>
                             {" "}
                             <Link to="/about_us">О нас</Link>
                         </a>
+                        </span>
+                        <span>
                         <a href="#scroll-to-contacts">Контакты</a>
+                        </span>
+                        <span>
                         <a className='fw400' onClick={toggleShowModal}>Cвязаться</a>
+                        </span>
                     </div>
-
-                    <div className="header__contacts">
                         <IconsSocial/>
-                    </div>
                 </div>
             </section>
 
