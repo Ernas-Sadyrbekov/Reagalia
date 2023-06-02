@@ -102,6 +102,7 @@ const Header = ({ toggleShowModal }) => {
               </div>
             </div>
           </div>
+        </div>
       </section>
     </header>
   );
