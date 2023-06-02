@@ -5,7 +5,7 @@ const AllProducts = ({ toggleShowModal }) => {
   return (
     <section className="main-section ">
       <div className="section_popular">
-        <h2 className="all_prod_title">Все Продукты</h2>
+        <h2 className="all_prod_title">Ассортимент</h2>
         <div className="slider__main_btn contact_all">
           <button className="blue-button" onClick={toggleShowModal}>
             <a href="#" tabIndex="0">

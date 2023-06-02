@@ -16,7 +16,6 @@ const Slider = ({toggleShowModal}) => {
   function showSlides() {
     let i;
     let slides = document.getElementsByClassName("slider__image");
-    console.log(slides);
     for (i = 0; i < slides.length; i++) {
       slides[i].style.opacity = "0";
       slides[i].style.visibility = "hidden";
@@ -36,7 +35,7 @@ const Slider = ({toggleShowModal}) => {
     <section className="slider main-section">
       <div className="section__container">
         <div className="slider__left-text">
-          <span>SmartDevice</span>
+          <span>ALTAIR</span>
         </div>
         <div className="slider__main">
           <p className="slider__main_discount">В наличии и по лучшей цене</p>
@@ -60,6 +59,7 @@ const Slider = ({toggleShowModal}) => {
           <div className="slider__image slider__image1"></div>
           <div className="slider__image slider__image2"></div>
           <div className="slider__image slider__image3"></div>
+          <div className="slider__image slider__image4"></div>
         </div>
       </div>
       <div className="slider__social">

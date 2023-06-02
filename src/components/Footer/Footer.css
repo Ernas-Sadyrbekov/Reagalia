@@ -32,11 +32,12 @@
 
 .footer .footer__contacts p{
   font-weight: 300;
-  font-size: 30px;
+  font-size: 19px;
+  padding-bottom: 8px;
 }
 
 .footer__contacts p.footer__left_p_number {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -57,6 +58,10 @@
   display: flex;
   justify-content: center;
   margin-top: 7px;
+}
+
+.fs62 {
+  padding-bottom: 5px!important;
 }
 
 .copyright > * {
@@ -103,6 +108,10 @@ section.footer__map {
     margin-bottom: 10px;
   }
 
+  .footer__contacts p.footer__left_p_number {
+    font-size: 31px;
+    font-weight: 300;
+  }
 
   .footer .footer__contacts {
     padding: 13px;

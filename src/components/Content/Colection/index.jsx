@@ -4,6 +4,7 @@ import airdopes from './img/airdopes-collection-img.png';
 import latestSmartwatch from './img/latest-smartwatch-collection-img.png';
 import smartBand from './img/smart-band-collection-img.png';
 import vrGlasses from './img/best-collection-vr-glasses-img.png';
+import jbl from './img/jbl.webp';
 
 const Collection = ({toggleShowModal}) => {
     return (
@@ -92,7 +93,7 @@ const Collection = ({toggleShowModal}) => {
             </section><section className="main-section collection collection-black">
             <div className="section__container">
                 <div className="collection__img">
-                    <img src={vrGlasses} alt="vr Glasses"/>
+                    <img src={jbl} alt="vr Glasses"/>
                 </div>
                 <div className="collection__text">
                     <div>

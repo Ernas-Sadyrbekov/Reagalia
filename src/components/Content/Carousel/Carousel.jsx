@@ -47,14 +47,12 @@ const Carousel = () => {
     <section className="carousel_section main-section">
       <div className="section__container">
         <div className="left_section">
-          <h2>Categories</h2>
+          <h2>ALTAIR</h2>
 
           <hr />
 
           <p>
-            we have wide range of watch collection to present to our customers.
-            We have gigantic range of smart watches, smart phones, bands and
-            many other watches.
+            Мы имеем отличную репутацию на протяжении более 20 лет в продажах электронной и бытовой техники от мировых брендов. Для получения актуального прайс-листа, позвоните по номеру телефона либо можете написать в месседжеры whatsapp, telegram.
           </p>
 
           {/* <button className="prev_btn" onClick={handlePrev}>
