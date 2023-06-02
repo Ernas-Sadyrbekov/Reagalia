@@ -33,7 +33,7 @@ function App() {
         <Route path="/" element=<HomePage toggleShowModal={toggleShowModal} /> />
       </Routes>
 
-      <Footer />
+      <Footer toggleShowModal={toggleShowModal} />
         <Modal show={showModal} onCloseButtonClick={toggleShowModal} />
     </>
   );

@@ -30,7 +30,6 @@ header .logo {
 header .logo_first_childe {
   font-size: 30px;
   font-weight: 600;
-  font-family: var(--font-family-open-sans);
 }
 header .logo_last_childe {
   font-size: 12.5px;

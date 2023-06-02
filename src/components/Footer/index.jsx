@@ -4,8 +4,11 @@ import FormContact
 import './Footer.css'
 import IconsSocial
     from "../Content/IconsSocial";
+import {
+    Link
+} from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({toggleShowModal}) => {
 
     return (
         <>
@@ -37,6 +40,37 @@ const Footer = () => {
                     aria-hidden="false"
                     tabIndex="0"></iframe>
             </section>
+
+            <section className="footer__navigation main-section">
+                <div className="section__container">
+                    <div className="logo">
+                        <span className="footer__name">ALTAIR</span>
+                        <span className="footer__about">ELECTRONIC FZE</span>
+                    </div>
+
+                    <div className="navigation">
+                        <a className='fw400'>
+                            {" "}
+                            <Link to="/">Главная</Link>{" "}
+                        </a>
+                        <a>
+                            {" "}
+                            <Link to="/all_products">Наши товары</Link>
+                        </a>
+                        <a className='fw400'>
+                            {" "}
+                            <Link to="/about_us">О нас</Link>
+                        </a>
+                        <a href="#scroll-to-contacts">Контакты</a>
+                        <a className='fw400' onClick={toggleShowModal}>Cвязаться</a>
+                    </div>
+
+                    <div className="header__contacts">
+                        <IconsSocial/>
+                    </div>
+                </div>
+            </section>
+
             <section className="copyright main-section">
                 <span>Все права защищены © </span><p>ALTAIR ELECTRONIC FZE.</p>
             </section>
