@@ -5,12 +5,12 @@
 
 .icon-social a {
     display: inline-block;
-    height: 24px;
-    width: 24px;
+    height: 28px;
+    width: 28px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    margin: 5px 4px;
+    margin: 5px 5px;
 }
 
 .icon-social__whatsapp {

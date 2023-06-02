@@ -103,6 +103,10 @@ section.footer__map {
     margin-bottom: 10px;
   }
 
+  .footer__contacts p.footer__left_p_number {
+    font-size: 31px;
+    font-weight: 300;
+  }
 
   .footer .footer__contacts {
     padding: 13px;

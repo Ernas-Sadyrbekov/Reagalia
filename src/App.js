@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <Header show={showModal} toggleShowModal={toggleShowModal} />
+      <Header toggleShowModal={toggleShowModal} />
 
       <Routes>
         <Route path="/about_us" element=<AboutUs /> />

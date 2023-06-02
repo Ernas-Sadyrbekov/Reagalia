@@ -23,26 +23,26 @@ const Header = ({toggleShowModal}) => {
           <div className="section__container">
             <div className="header_container">
               <div className="logo">
-                <span className="logo_first_childe">Regalia</span>
-                <span className="logo_last_childe">Ecommerse Store</span>
+                <span className="logo_first_childe">ALTAIR</span>
+                <span className="logo_last_childe">ELECTRONIC FZE</span>
               </div>
               <ul className="navigation">
                 <li className='fw400'>
                   {" "}
-                  <Link to="/"> Главная</Link>{" "}
+                  <Link to="/">Главная</Link>{" "}
                 </li>
-                <li className='fw400'>
+                <li>
                   {" "}
                   <Link to="/all_products">Наши товары</Link>
                 </li>
                 <li className='fw400'>
                   {" "}
-                  <Link to="/all_products">О нас</Link>
+                  <Link to="/about_us">О нас</Link>
                 </li>
                 <li>
                   <a href="#scroll-to-contacts">Контакты</a>
                 </li>
-                <li onClick={() => console.log(toggleShowModal)}>Cвязаться</li>
+                <li className='fw400' onClick={toggleShowModal}>Cвязаться</li>
               </ul>
 
               <div className="header__contacts">
@@ -69,7 +69,7 @@ const Header = ({toggleShowModal}) => {
                         <li>
                           <Link to="/all_products">Наши товары</Link>
                         </li>
-                        <li>Cвязаться</li>
+                        <li onClick={toggleShowModal}>Cвязаться</li>
                       </ul>
                     </div>
                   </div>

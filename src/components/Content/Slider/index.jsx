@@ -16,7 +16,6 @@ const Slider = ({toggleShowModal}) => {
   function showSlides() {
     let i;
     let slides = document.getElementsByClassName("slider__image");
-    console.log(slides);
     for (i = 0; i < slides.length; i++) {
       slides[i].style.opacity = "0";
       slides[i].style.visibility = "hidden";

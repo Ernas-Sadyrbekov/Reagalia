@@ -11,7 +11,7 @@ const HomePage = ({showModal, toggleShowModal}) => {
   return (
     <div>
       <Slider toggleShowModal={toggleShowModal} />
-      <Header />
+      <Header toggleShowModal={toggleShowModal} />
       <Carousel />
       <Advantages />
       <Popular toggleShowModal={toggleShowModal} />
