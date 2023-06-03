@@ -90,7 +90,9 @@ const Header = ({ toggleShowModal }) => {
                         <li>
                           <Link to="/about_us"> О нас</Link>
                         </li>
-                        <li>Контакты</li>
+                        <li>
+                          <a href="#scroll-to-contacts">Контакты</a>
+                        </li>
                         <li>
                           <Link to="/all_products">Наши товары</Link>
                         </li>

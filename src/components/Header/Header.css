@@ -18,10 +18,10 @@ header {
 }
 
 .navigation > li {
-  font-weight: 500!important;
+  font-weight: 500 !important;
 }
 .navigation > li > a {
-  font-weight: 500!important;
+  font-weight: 500 !important;
 }
 
 .header__contacts > p {
