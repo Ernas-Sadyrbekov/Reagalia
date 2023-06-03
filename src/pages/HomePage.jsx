@@ -1,4 +1,3 @@
-import Header from "../components/Header/Header";
 import Carousel from "../components/Content/Carousel/Carousel";
 import Advantages from "../components/Content/Advantages/Advantages";
 import Popular from "../components/Content/Popular/Popular";
@@ -7,11 +6,11 @@ import Modal from "../components/Content/Modal";
 import Collection from "../components/Content/Colection/index";
 import { useState } from "react";
 
-const HomePage = ({showModal, toggleShowModal}) => {
+const HomePage = ({ showModal, toggleShowModal }) => {
   return (
     <div>
       <Slider toggleShowModal={toggleShowModal} />
-      <Header toggleShowModal={toggleShowModal} />
+
       <Carousel />
       <Advantages />
       <Popular toggleShowModal={toggleShowModal} />
