@@ -172,7 +172,7 @@ header .navigation li:hover {
   padding: 1rem;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 810px) {
   header .header_container {
     width: 100%;
     display: flex;

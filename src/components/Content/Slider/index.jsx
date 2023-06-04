@@ -47,7 +47,8 @@ const Slider = ({toggleShowModal}) => {
           </p>
           <p className="slider__main_price">Отправка в любой регион</p>
           <div className="slider__main_btn">
-            <button className="blue-button" onClick={toggleShowModal}>
+
+            <button className="blue-button text_slider" onClick={toggleShowModal}>
               <a href="#" tabIndex="0">
                 <span>Связаться</span>
                 <p></p>
