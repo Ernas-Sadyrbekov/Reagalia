@@ -1,13 +1,26 @@
 import React, {
+    useRef
 } from "react";
 import './Form.css';
+import emailjs from "emailjs-com";
 
 const FormContact = () => {
+    const form = useRef();
+
     const handleSubmit = (e) => {
+        // e.preventDefault();
+        // const formData = new FormData(e.target);
+        // // api.login(formData.get('email'), formData.get('phone'), formData.get('email'), formData.get('address'), formData.get('comment'));
+        // console.log(formData.get('name'), formData.get('phone'), formData.get('email'), formData.get('address'), formData.get('comment'));
         e.preventDefault();
-        const formData = new FormData(e.target);
-        // api.login(formData.get('email'), formData.get('phone'), formData.get('email'), formData.get('address'), formData.get('comment'));
-        console.log(formData.get('name'), formData.get('phone'), formData.get('email'), formData.get('address'), formData.get('comment'));
+
+        emailjs.sendForm('gmail', 'template_xchfztq', form.current, 'pylx-Dm8SX08NFNUM')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset()
     };
 
     return (
@@ -16,7 +29,7 @@ const FormContact = () => {
                 <p className='fs62'>Оформление заказа онлайн</p>
                 <hr className='line-hr'/>
             </div>
-            <form onSubmit={handleSubmit}>
+            <form  ref={form} onSubmit={handleSubmit}>
                 <div className="form-buy__row">
                     <div>
                         <label htmlFor="name">Ваше имя: *</label>

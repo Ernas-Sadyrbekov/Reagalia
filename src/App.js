@@ -19,7 +19,8 @@ import AboutUs from "./pages/AboutUs";
 function App() {
     const [showModal, setShowModal] = useState(false);
 
-    const toggleShowModal = () => {
+    const toggleShowModal = (e) => {
+        e.preventDefault()
         setShowModal(!showModal);
     };
 
