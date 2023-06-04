@@ -1,47 +1,32 @@
 import React, { useState } from "react";
 import ProductCard from "../ProductCard/ProductCard";
+import samsung from './img/samsung.png';
+
 import "./Carousel.css";
 
 const Carousel = () => {
   const card = [
     {
-      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-1.png",
-      title: "Redmi Watch GPS",
+      img: "https://www.pngmart.com/files/22/iPhone-14-PNG-Transparent.png",
+      title: "IPhone",
       id: 1,
     },
     {
-      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-2.png",
-      title: "Redmi Watch GPS",
+      img: "https://itronics.in/wp-content/uploads/2022/08/MBP-M2_HERO_-F-01.png",
+      title: "MacBook",
       id: 2,
     },
     {
-      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-3.png",
-      title: "Redmi Watch GPS",
+      img: samsung,
+      title: "Samsung",
       id: 3,
     },
     {
-      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-4.png",
-      title: "Redmi Watch GPS",
+      img: "https://www.techindeep.com/phones/devicephotos/xiaomi-mi11.png",
+      title: "Xiaomi mi ",
       id: 4,
     },
-    {
-      img: "https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-2.png",
-      title: "Redmi Watch GPS",
-      id: 2,
-    },
   ];
-
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
-  // const handleNext = () => {
-  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % card.length);
-  // };
-
-  // const handlePrev = () => {
-  //   setCurrentIndex((prevIndex) =>
-  //     prevIndex === 0 ? card.length - 1 : prevIndex - 1
-  //   );
-  // };
 
   return (
     <section className="carousel_section main-section">
@@ -54,13 +39,6 @@ const Carousel = () => {
           <p>
             Мы имеем отличную репутацию на протяжении более 20 лет в продажах электронной и бытовой техники от мировых брендов. Для получения актуального прайс-листа, позвоните по номеру телефона либо можете написать в месседжеры whatsapp, telegram.
           </p>
-
-          {/* <button className="prev_btn" onClick={handlePrev}>
-            <img src="https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-wrap-prev.png" />
-          </button>
-          <button className="next_btn" onClick={handleNext}>
-            <img src="https://regaliae.jhkinfotech.in/wearable-gadgets/images/homepage-v7-categories-wrap-next.png" />
-          </button> */}
         </div>
         <div className="right_section">
           <div className="carousel_content">

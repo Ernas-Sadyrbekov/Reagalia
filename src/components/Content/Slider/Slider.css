@@ -18,6 +18,10 @@
     color: rgb(255 255 255 / 9%);
 }
 
+.text_slider {
+    position: relative;
+    z-index: 1000;
+}
 .slider__main {
     margin: 264px 0;
 }
