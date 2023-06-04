@@ -36,7 +36,7 @@ const Collection = ({toggleShowModal}) => {
                 </div>
             </section>
 
-            <section className="main-section collection">
+            <section className="main-section collection collection-black">
                 <div className="section__container">
                     <div className="collection__img">
                         <img src={latestSmartwatch} alt="latest Smart watch"/>
@@ -64,7 +64,7 @@ const Collection = ({toggleShowModal}) => {
                 </div>
             </section>
 
-            <section className="main-section collection collection-green">
+            <section className="main-section collection collection-green ">
                 <div className="section__container">
                     <div className="collection__text">
                         <div>
@@ -90,7 +90,9 @@ const Collection = ({toggleShowModal}) => {
                         <img src={smartBand} alt="airdopes"/>
                     </div>
                 </div>
-            </section><section className="main-section collection collection-black">
+            </section>
+
+            <section className="main-section collection collection-black">
             <div className="section__container">
                 <div className="collection__img">
                     <img src={jbl} alt="vr Glasses"/>
