@@ -1,3 +1,7 @@
+.section_popular {
+  display: flex;
+  justify-content: space-between;
+}
 .section_popular h2 {
   font-size: var(--3xl-font-size);
   font-weight: 900;

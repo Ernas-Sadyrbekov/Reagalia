@@ -4,7 +4,7 @@ import "./AllProducts.css";
 const AllProducts = ({ toggleShowModal }) => {
   return (
     <section className="main-section ">
-      <div className="section_popular">
+      <div className="section_popular section__container">
         <h2 className="all_prod_title">Ассортимент</h2>
         <div className="slider__main_btn contact_all">
           <button className="blue-button" onClick={toggleShowModal}>
