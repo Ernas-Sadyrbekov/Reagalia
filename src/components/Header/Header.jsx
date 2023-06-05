@@ -15,6 +15,7 @@ const Header = ({ toggleShowModal }) => {
     header.style.height = "60px";
   }
   window.addEventListener("scroll", runOnScroll);
+
   // function closeMenu() {
   //   const burgerMenu = document.getElementsByClassName("menu")[0];
   //   burgerMenu.style.display = "none";
