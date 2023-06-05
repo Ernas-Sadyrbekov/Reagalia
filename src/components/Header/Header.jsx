@@ -14,11 +14,15 @@ const Header = ({ toggleShowModal }) => {
     logo2.style.fontSize = "10.5px";
     header.style.height = "60px";
   }
+
   window.addEventListener("scroll", runOnScroll);
-  // function closeMenu() {
-  //   const burgerMenu = document.getElementsByClassName("menu")[0];
-  //   burgerMenu.style.display = "none";
-  // }
+
+  let closeMenu = () => {
+    //const burgerMenu = document.getElementsByClassName("menu")[0];
+    //burgerMenu.style.display = "none";
+    console.log('sdfsdf')
+  }
+
   return (
     <header>
       <section className="main-section header__section">
@@ -87,11 +91,12 @@ const Header = ({ toggleShowModal }) => {
                   <div>
                     <div>
                       <ul>
-                        <li>
+                        <li onClick={closeMenu} >qweqweqweqweqwe</li>
+                        <li onClick={closeMenu}>
                           <Link to="/"> Главная</Link>
                         </li>
                         <li>
-                          <Link to="/about_us"> О нас</Link>
+                          <Link to="/about_us" onClick={closeMenu}> О нас</Link>
                         </li>
                         <li>
                           <a href="#scroll-to-contacts">Контакты</a>

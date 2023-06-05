@@ -46,35 +46,37 @@ const Footer = ({toggleShowModal}) => {
                     <div className="logo">
                         <p className="footer__name">ALTAIR</p>
                         <p className="footer__about">ELECTRONIC FZE</p>
+                        <p className='footer__description'>Мы имеем отличную репутацию на протяжении более 20 лет в продажах электронной и бытовой техники от мировых брендов. Для получения актуального прайс-листа, позвоните по номеру телефона либо можете написать в месседжеры whatsapp, telegram.</p>
+                        <IconsSocial/>
                     </div>
 
                     <div className="footer__anchors">
-                        <span>
+                        <p>Быстрые ссылки</p>
+                        <p>
                             <a className='fw400'>
                                 {" "}
-                                <Link to="/">Главная</Link>{" "}
+                                <Link to="/"><b>> </b>  Главная</Link>{" "}
                             </a>
-                        </span>
-                        <span>
+                        </p>
+                        <p>
                         <a>
                             {" "}
-                            <Link to="/all_products">Наши товары</Link>
+                            <Link to="/all_products"><b>> </b>  Наши товары</Link>
                         </a>
-                        </span>
-                        <span>
+                        </p>
+                        <p>
                         <a className='fw400'>
                             {" "}
-                            <Link to="/about_us">О нас</Link>
+                            <Link to="/about_us"><b>> </b>  О нас</Link>
                         </a>
-                        </span>
-                        <span>
-                        <a href="#scroll-to-contacts">Контакты</a>
-                        </span>
-                        <span>
-                        <a className='fw400' onClick={toggleShowModal}>Cвязаться</a>
-                        </span>
+                        </p>
+                        <p>
+                            <a href="#scroll-to-contacts"><b>> </b> Контакты</a>
+                        </p>
+                        <p>
+                        <a className='fw400' onClick={toggleShowModal}><b>> </b>  Cвязаться</a>
+                        </p>
                     </div>
-                        <IconsSocial/>
                 </div>
             </section>
 

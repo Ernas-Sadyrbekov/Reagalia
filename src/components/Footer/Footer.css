@@ -50,9 +50,9 @@
 }
 
 .copyright {
-  color: var(--white-color);
+  color: var(--black-color-2);
   height: 77px;
-  background-color: var(--black-color-2);
+  background-color: var(--white-color);
   text-align: center;
   align-items: center;
   display: flex;
@@ -78,51 +78,72 @@ section.footer__map {
 
 .footer__navigation .section__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .footer__name {
-  font-size: 21px;
-  font-weight: 600;
-  line-height: 19px;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 52px;
 }
 
 .footer__about {
-  ont-size: 9px;
+  font-size: 26px;
+  font-weight: 100;
+  color: var(--green-color);
+}
+
+.footer__description {
+  margin: 24px 0;
 }
 
 .footer__navigation {
   margin: 23px 0 0px;
-  background-color: var(--black-color-2);
+  background-color: var(--gray-color-2);
   color: var(--white-color);
 }
 
-.footer__navigation span {
-  transition: all 0.5s ease;
+.footer__navigation p a {
+  transition: all 0.3s ease;
 }
 
-.footer__navigation span:hover {
-  background-color: var(--gray-color-1);
+.footer__navigation p a:hover {
+  color: var(--green-color);
+}
+
+.footer__navigation .logo {
+  width: 300px;
+  background-color: black;
+  padding: 6px 20px 6px 10px;
 }
 
 .footer__anchors {
-  background-color: var(--black-color-2);
-  display: flex;
-  height: 38px;
-  text-transform: uppercase;
-  line-height: 36px;
+  color: var(--black-color-2);
+  padding: 33px;
+  margin-right: auto;
 }
 
-.footer__anchors a {
-  padding: 0 10px;
+.footer__anchors > p {
+  padding: 8px;
+}
+
+.footer__anchors p:first-child {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.footer__anchors p > a {
   display: inline-block;
 }
 
-@media (max-width: 1600px) {
-  .footer__navigation {
-    padding: 4px 25px 0;
-  }
+.footer__anchors b {
+  font-size: 110%;
+  padding: 0 5px;
+}
+
+.footer__navigation .icon-social {
+  justify-content: flex-start;
 }
 
 @media (max-width: 1276px) {
@@ -145,9 +166,9 @@ section.footer__map {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 585px) {
   .footer__anchors {
-    display: none;
+    padding: 0;
   }
 }
 
@@ -169,5 +190,17 @@ section.footer__map {
 
   .copyright {
     flex-direction: column;
+  }
+
+  .footer__navigation .section__container {
+    flex-direction: column;
+  }
+
+  .footer__navigation .logo {
+    width: 100%;
+  }
+
+  .footer__anchors {
+    margin-bottom: 16px;
   }
 }
