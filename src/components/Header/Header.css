@@ -147,7 +147,7 @@ header .navigation li:hover {
 
 .menu-wrap .toggler:checked ~ .menu > div {
   transform: scale(1);
-  transition-duration: var(--menu-speed);
+  transition-duration: 1s;
 }
 
 .menu-wrap .menu {
