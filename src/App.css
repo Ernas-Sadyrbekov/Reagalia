@@ -135,6 +135,7 @@ html {
   font-family: var(--font-family-jost);
   font-size: var(--m-font-size);
   color: var(--black-color-1);
+  scroll-behavior: smooth;
 }
 
 .main-section {

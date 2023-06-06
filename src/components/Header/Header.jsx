@@ -22,6 +22,13 @@ const Header = ({ toggleShowModal }) => {
     togglerRef.current.click();
   }
 
+  let scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <header>
       <section className="main-section header__section">
@@ -34,35 +41,20 @@ const Header = ({ toggleShowModal }) => {
             <ul className="navigation">
               <li
                 className="fw400"
-                onClick={() => {
-                  window.scrollTo({
-                    top: 0,
-                    behavior: "smooth",
-                  });
-                }}
+                onClick={scrollToTop}
               >
                 {" "}
                 <Link to="/">Главная</Link>{" "}
               </li>
               <li
-                onClick={() => {
-                  window.scrollTo({
-                    top: 0,
-                    behavior: "smooth",
-                  });
-                }}
+                onClick={scrollToTop}
               >
                 {" "}
                 <Link to="/all_products">Наши товары</Link>
               </li>
               <li
                 className="fw400"
-                onClick={() => {
-                  window.scrollTo({
-                    top: 0,
-                    behavior: "smooth",
-                  });
-                }}
+                onClick={scrollToTop}
               >
                 {" "}
                 <Link to="/about_us">О нас</Link>
@@ -90,19 +82,34 @@ const Header = ({ toggleShowModal }) => {
                   <div>
                     <div>
                       <ul>
-                        <li onClick={closeMenu}>
+                        <li onClick={(e) => {
+                          scrollToTop();
+                          closeMenu();
+                        }}>
                           <Link to="/"> Главная</Link>
                         </li>
-                        <li onClick={closeMenu}>
+                        <li onClick={(e) => {
+                          scrollToTop();
+                          closeMenu();
+                        }}>
                           <Link to="/about_us"> О нас</Link>
                         </li>
-                        <li onClick={closeMenu}>
+                        <li onClick={(e) => {
+                          scrollToTop();
+                          closeMenu();
+                        }}>
                           <a href="#scroll-to-contacts">Контакты</a>
                         </li>
-                        <li onClick={closeMenu}>
+                        <li onClick={(e) => {
+                          scrollToTop();
+                          closeMenu();
+                        }}>
                           <Link to="/all_products">Наши товары</Link>
                         </li>
-                        <li onClick={toggleShowModal}>Cвязаться</li>
+                        <li onClick={(e) => {
+                          toggleShowModal(e);
+                          closeMenu();
+                        }}>Cвязаться</li>
                       </ul>
                     </div>
                   </div>
