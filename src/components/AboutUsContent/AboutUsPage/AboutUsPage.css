@@ -4,9 +4,8 @@
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background: url("https://regaliae.jhkinfotech.in/wearable-gadgets/images/aboutpage-v1-header-bg.jpg"); */
   background: center / cover no-repeat
-    url("https://regaliae.jhkinfotech.in/wearable-gadgets/images/aboutpage-v1-header-bg.jpg");
+    url("./img/aboutpage-v1-header-bg.jpg");
 }
 .page_section {
   width: 100%;

@@ -6,15 +6,15 @@ import AboutUsBrand from "../components/AboutUsContent/AbouUsBarand/AboutUsBrand
 import AboutUsStoreFirst from "../components/AboutUsContent/AboutUsStore/AboutUsStoreFirst/AboutUsStoreFirst";
 import AboutUsStoreSecond from "../components/AboutUsContent/AboutUsStore/AboutUsStoreSecond/AboutUsStoreSecond";
 
-const AboutUs = () => {
+const AboutUs = ({toggleShowModal}) => {
   return (
     <div>
       <AboutUsPage />
       <AboutUsWelcome />
       <AboutUsInfo />
       <AboutUsBrand />
-      <AboutUsStoreFirst />
-      <AboutUsStoreSecond />
+      <AboutUsStoreFirst  toggleShowModal={toggleShowModal} />
+      <AboutUsStoreSecond  toggleShowModal={toggleShowModal} />
     </div>
   );
 };

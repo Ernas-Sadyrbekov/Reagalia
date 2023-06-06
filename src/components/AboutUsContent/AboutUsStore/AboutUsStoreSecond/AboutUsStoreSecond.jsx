@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUsStoreSecond.css";
-const AboutUsStoreSecond = () => {
+const AboutUsStoreSecond = ({toggleShowModal}) => {
   return (
     <section className="main-section">
       <div className="section__container section_store_second">
@@ -17,7 +17,7 @@ const AboutUsStoreSecond = () => {
             can experience class A shopping experience with us.
           </p>
           <div className="slider__main_btn">
-            <button className="blue-button">
+            <button className="blue-button" onClick={toggleShowModal} >
               <a href="#" tabIndex="0">
                 <span>Связаться</span>
                 <p></p>
