@@ -6,6 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import IconsSocial from "../Content/IconsSocial";
 const Header = ({ toggleShowModal }) => {
+
   function runOnScroll() {
     const header = document.getElementsByTagName("header")[0];
     const logo1 = document.getElementsByClassName("logo_first_childe")[0];
@@ -16,11 +17,11 @@ const Header = ({ toggleShowModal }) => {
   }
   window.addEventListener("scroll", runOnScroll);
 
+  const togglerRef = React.useRef(null);
   function closeMenu() {
-    const burgerMenu = document.getElementsByClassName("menu")[0];
-    //burgerMenu.style.display = "none";
-    burgerMenu.style.visibility = "hidden";
+    togglerRef.current.click();
   }
+
   return (
     <header>
       <section className="main-section header__section">
@@ -80,7 +81,7 @@ const Header = ({ toggleShowModal }) => {
             </div>
 
             <div class="menu-wrap">
-              <input type="checkbox" class="toggler" />
+              <input ref={togglerRef} type="checkbox" class="toggler" />
               <div class="hamburger">
                 <div></div>
               </div>

@@ -8,7 +8,7 @@ const Advantages = () => {
   const advantages = [
     {
       title: "Логистика",
-      p: "Отправкав любой регион",
+      p: "Отправка в любой регион",
       img: Png1,
     },
     {
