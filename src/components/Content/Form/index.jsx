@@ -156,7 +156,7 @@ const FormContact = () => {
         </div>
         <div className="form-buy__row">
           <div>
-            <label htmlFor="email">E-mail:</label>
+            <label htmlFor="email">E-mail: *</label>
             <input
               type="email"
               id="email"
@@ -166,7 +166,7 @@ const FormContact = () => {
             />
           </div>
           <div>
-            <label htmlFor="address">Адрес:</label>
+            <label htmlFor="address">Адрес: *</label>
             <input
               type="address"
               id="address"
@@ -178,7 +178,7 @@ const FormContact = () => {
         </div>
         <div className="form-buy__row form-buy__row-comment">
           <div>
-            <label htmlFor="comment">Комментарии к заказу:</label>
+            <label htmlFor="comment">Комментарии к заказу: *пше</label>
             <input
               type="comment"
               id="comment"
