@@ -26,7 +26,7 @@ const Advantages = () => {
     <section className="main-section">
       <div className="advantages_container section__container">
         {advantages.map((item) => (
-          <div className="advantages_content">
+          <div className="advantages_content" key={item.title}>
             <img src={item.img} />
             <div>
               <h6>{item.title}</h6>

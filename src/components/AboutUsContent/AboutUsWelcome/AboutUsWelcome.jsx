@@ -1,5 +1,7 @@
 import React from "react";
 import "./AboutUsWelcome.css";
+import welcomeImg from "./img/about-whoarewe-img.png"
+
 const AboutUsWelcome = () => {
   return (
     <section className="main-section">
@@ -41,7 +43,7 @@ const AboutUsWelcome = () => {
           </div>
         </div>
         <div className="welcome_right_section">
-          <img src="https://regaliae.jhkinfotech.in/wearable-gadgets/images/about-whoarewe-img.png" />
+          <img src={welcomeImg} />
         </div>
       </div>
     </section>

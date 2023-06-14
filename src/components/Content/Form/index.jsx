@@ -178,7 +178,7 @@ const FormContact = () => {
         </div>
         <div className="form-buy__row form-buy__row-comment">
           <div>
-            <label htmlFor="comment">Комментарии к заказу: *пше</label>
+            <label htmlFor="comment">Комментарии к заказу: *</label>
             <input
               type="comment"
               id="comment"

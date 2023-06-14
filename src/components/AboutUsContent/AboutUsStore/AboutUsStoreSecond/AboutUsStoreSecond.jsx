@@ -1,5 +1,7 @@
 import React from "react";
 import "./AboutUsStoreSecond.css";
+import aboutUsStoreImg from "./img/happycustomer-and-ourstore-img2.jpg";
+
 const AboutUsStoreSecond = ({toggleShowModal}) => {
   return (
     <section className="main-section">
@@ -26,7 +28,7 @@ const AboutUsStoreSecond = ({toggleShowModal}) => {
           </div>
         </div>
         <div className="about_us_right">
-          <img src="https://regaliae.jhkinfotech.in/wearable-gadgets/images/happycustomer-and-ourstore-img2.jpg" />
+          <img src={aboutUsStoreImg} />
         </div>
       </div>
     </section>
