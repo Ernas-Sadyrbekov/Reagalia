@@ -31,7 +31,7 @@ const AboutUsInfo = () => {
     <section className="main_info_section main-section">
       <div className="info_section section__container">
         {card.map((item) => (
-          <div className="info_card">
+          <div className="info_card" key={item.title}>
             <img src={item.img} />
             <span>{item.num}</span>
             <h5>{item.title}</h5>

@@ -64,16 +64,73 @@ const FormContact = () => {
     }
   };
 
-  const phoneHandler = (e) => {
-    setPhone(e.target.value);
-    var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+  useEffect(() => {
+      let countOfNumbersInValue = 0;
+      let countOfSignsInValue = 0;
+      let countOfIncorrectedSimbols = 0;
+      let lengthOfNumber = phone.length;
 
-    if (!re.test(String(e.target.value))) {
-      setPhoneError("Некорректный номер телефона!");
-    } else {
-      setPhoneError("");
-    }
+      for (let i = 0; i < lengthOfNumber; i++) {
+        if(!(isNaN(+phone[i]))) {
+          countOfNumbersInValue++;
+        }
+
+        if(phone[i] === "+" || phone[i] === "(" || phone[i] === ")" || phone[i] === "-" || phone[i] === ' ') {
+          countOfSignsInValue++;
+        }
+
+        if(lengthOfNumber && isNaN(+phone[i]) && !( phone[i] === "+" || phone[i] === "(" || phone[i] === ")" || phone[i] === "-" || phone[i] === ' ' )) {
+          countOfIncorrectedSimbols++;
+          console.log(countOfIncorrectedSimbols);
+        }
+      }
+
+      if (countOfIncorrectedSimbols >= 1) {
+        setPhoneError("Ввели некорректный символ в поле телефона!");
+      } else if (countOfNumbersInValue < 7 && lengthOfNumber < 20) {
+        setPhoneError("Некорректный номер телефона!");
+      } else {
+        setPhoneError("");
+      }
+  }, [phone]);
+
+  const phoneHandler = (e) => {
+    setPhoneError('');
+    setPhone(e.target.value);
   };
+
+  // const phoneHandler = (e) => {
+  //   setPhoneError('');
+  //
+  //   setPhone(e.target.value);
+  //   let countOfNumbersInValue = 0;
+  //   let countOfSignsInValue = 0;
+  //   let countOfIncorrectedSimbols = 0;
+  //   let lengthOfNumber = phone.length;
+  //
+  //   for (let i = 0; i < lengthOfNumber; i++) {
+  //     if(!(isNaN(+phone[i]))) {
+  //       countOfNumbersInValue++;
+  //     }
+  //
+  //     if(phone[i] === "+" || phone[i] === "(" || phone[i] === ")" || phone[i] === "-" || phone[i] === ' ') {
+  //       countOfSignsInValue++;
+  //     }
+  //
+  //     if(lengthOfNumber && isNaN(+phone[i]) && !( phone[i] === "+" || phone[i] === "(" || phone[i] === ")" || phone[i] === "-" || phone[i] === ' ' )) {
+  //       countOfIncorrectedSimbols++;
+  //       console.log(countOfIncorrectedSimbols);
+  //     }
+  //   }
+  //
+  //   if (countOfIncorrectedSimbols >= 1) {
+  //     setPhoneError("Ввели некорректный символ в поле телефона!");
+  //   } else if (countOfNumbersInValue < 7 && lengthOfNumber < 20) {
+  //     setPhoneError("Некорректный номер телефона!");
+  //   } else {
+  //     setPhoneError("");
+  //   }
+  // };
 
   const userAdress = (e) => {
     setAdress(e.target.value);
@@ -178,7 +235,7 @@ const FormContact = () => {
         </div>
         <div className="form-buy__row form-buy__row-comment">
           <div>
-            <label htmlFor="comment">Комментарии к заказу: *пше</label>
+            <label htmlFor="comment">Комментарии к заказу: *</label>
             <input
               type="comment"
               id="comment"

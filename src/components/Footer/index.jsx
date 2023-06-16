@@ -53,22 +53,16 @@ const Footer = ({toggleShowModal}) => {
                     <div className="footer__anchors">
                         <p>Быстрые ссылки</p>
                         <p>
-                            <a className='fw400'>
                                 {" "}
                                 <Link to="/"><b>> </b>  Главная</Link>{" "}
-                            </a>
                         </p>
                         <p>
-                        <a>
                             {" "}
                             <Link to="/all_products"><b>> </b>  Наши товары</Link>
-                        </a>
                         </p>
                         <p>
-                        <a className='fw400'>
                             {" "}
                             <Link to="/about_us"><b>> </b>  О нас</Link>
-                        </a>
                         </p>
                         <p>
                             <a href="#scroll-to-contacts"><b>> </b> Контакты</a>

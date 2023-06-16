@@ -4,8 +4,7 @@
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
-  background: center / cover no-repeat
-    url("./img/aboutpage-v1-header-bg.jpg");
+  background: center / cover no-repeat url("./img/aboutpage-v1-header-bg.jpg");
 }
 .page_section {
   width: 100%;
