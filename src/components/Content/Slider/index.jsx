@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Slider.css";
+import { useTranslation } from "react-i18next";
 
-
-const Slider = ({toggleShowModal}) => {
-  let [slideIndex, setSlideIndex] = useState('0');
-
+const Slider = ({ toggleShowModal }) => {
+  let [slideIndex, setSlideIndex] = useState("0");
 
   useEffect(() => {
     showSlides();
@@ -30,7 +29,7 @@ const Slider = ({toggleShowModal}) => {
     slides[slideIndex - 1].style.transform = "translate(0px, 0px)";
     // setTimeout(showSlides, 4000); // Change image every 2 seconds
   }
-
+  const { t } = useTranslation();
   return (
     <section className="slider main-section">
       <div className="section__container">
@@ -38,22 +37,24 @@ const Slider = ({toggleShowModal}) => {
           <span>ALTAIR</span>
         </div>
         <div className="slider__main">
-          <p className="slider__main_discount">В наличии и по лучшей цене</p>
+          <p className="slider__main_discount">{t("slider_stock")}</p>
           <h1 className="slider__main_h1">
-            Электронная<br />техника
+            {t("slider_electronic")}
+            <br />
+            {t("slider_technic")}
           </h1>
-          <p className="slider__main_description">
-            Все девайсы от Apple, Samsung, JBL, Garmin, Xiaomi, LG, Huawei.
-          </p>
-          <p className="slider__main_price">Отправка в любой регион</p>
+          <p className="slider__main_description">{t("slider_devices")} </p>
+          <p className="slider__main_price">{t("slider_sending")} </p>
           <div className="slider__main_btn">
-
-            <button className="blue-button text_slider" onClick={toggleShowModal}>
+            <button
+              className="blue-button text_slider"
+              onClick={toggleShowModal}
+            >
               <a href="#" tabIndex="0">
-                <span>Связаться</span>
+                <span>{t("slider_contact")} </span>
                 <p></p>
               </a>
-            </ button>
+            </button>
           </div>
         </div>
         <div className="slider__images">
