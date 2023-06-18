@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import ProductCard from "../ProductCard/ProductCard";
-import iphone from './img/iPhone-14-PNG-Transparent.png';
-import macbook from './img/MBP-M2_HERO_-F-01.png';
-import samsung from './img/samsung.png';
-import xiaomi from './img/xiaomi-mi11.png';
+import iphone from "./img/iPhone-14-PNG-Transparent.png";
+import macbook from "./img/MBP-M2_HERO_-F-01.png";
+import samsung from "./img/samsung.png";
+import xiaomi from "./img/xiaomi-mi11.png";
 
 import "./Carousel.css";
+import { useTranslation } from "react-i18next";
 
 const Carousel = () => {
   const card = [
@@ -30,7 +31,7 @@ const Carousel = () => {
       id: 4,
     },
   ];
-
+  const { t } = useTranslation();
   return (
     <section className="carousel_section main-section">
       <div className="section__container">
@@ -39,9 +40,7 @@ const Carousel = () => {
 
           <hr />
 
-          <p>
-            Мы имеем отличную репутацию на протяжении более 20 лет в продажах электронной и бытовой техники от мировых брендов. Для получения актуального прайс-листа, позвоните по номеру телефона либо можете написать в месседжеры whatsapp, telegram.
-          </p>
+          <p>{t("carousel_title")}</p>
         </div>
         <div className="right_section">
           <div className="carousel_content">
