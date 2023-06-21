@@ -5,6 +5,7 @@ import { IconButton, MenuItem, Tooltip } from "@mui/material";
 import i18next from "i18next";
 import IconsSocial from "../Content/IconsSocial";
 import { useTranslation } from "react-i18next";
+
 const Header = ({ toggleShowModal }) => {
   function runOnScroll() {
     const header = document.getElementsByTagName("header")[0];
@@ -116,7 +117,7 @@ const Header = ({ toggleShowModal }) => {
                 <a href="#scroll-to-contacts">{t("header_contacts")} </a>
               </li>
               <li className="fw400" onClick={toggleShowModal}>
-                {t("heder_contact_us")}
+                {t("header_contact_us")}
               </li>
             </ul>
 

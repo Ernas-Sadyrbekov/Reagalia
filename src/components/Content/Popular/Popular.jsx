@@ -2,14 +2,17 @@ import React from "react";
 import "./Popular.css";
 import ProductCard from "../ProductCard/ProductCard";
 import { NavLink } from "react-router-dom";
+import {
+  useTranslation
+} from "react-i18next";
+
 const Popular = ({toggleShowModal}) => {
-
-
+  const {t} = useTranslation();
 
   return (
     <section className="main-section main_section_popular">
       <div className="section_popular section__container">
-        <h2>Ассортимент</h2>
+        <h2>{t("popular_title")}</h2>
 
 
         <div className="popular_cards">
@@ -22,7 +25,7 @@ const Popular = ({toggleShowModal}) => {
           });
         }}>
           <NavLink to="/all_products">
-            <span>Дальше</span>
+            <span>{t("popular_title")}</span>
             <p></p>
           </NavLink>
         </div>

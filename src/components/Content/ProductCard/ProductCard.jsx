@@ -8,8 +8,13 @@ import products5img from "./img/homepage-v7-popular-products-5.png"
 import products6img from "./img/homepage-v7-popular-products-6.png"
 import products7img from "./img/homepage-v7-popular-products-7.png"
 import products8img from "./img/homepage-v7-popular-products-8.png"
+import {
+  useTranslation
+} from "react-i18next";
 
 const ProductCard = ({ max, toggleShowModal }) => {
+  const {t} = useTranslation();
+
   const card = [
     {
       img: products1img,
@@ -102,7 +107,7 @@ const ProductCard = ({ max, toggleShowModal }) => {
                 <div className="slider__main_btn">
                   <button className="blue-button" onClick={toggleShowModal}>
                     <a href="#" tabIndex="0">
-                      <span>Связаться</span>
+                      <span>{t("header_contact_us")}</span>
                       <p></p>
                     </a>
                   </button>
