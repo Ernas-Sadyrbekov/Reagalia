@@ -51,7 +51,7 @@ const Slider = ({ toggleShowModal }) => {
               onClick={toggleShowModal}
             >
               <a href="#" tabIndex="0">
-                <span>{t("slider_contact")} </span>
+                <span>{t("header_contact_us")} </span>
                 <p></p>
               </a>
             </button>

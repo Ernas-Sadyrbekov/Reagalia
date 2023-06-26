@@ -3,22 +3,28 @@ import "./Advantages.css";
 import Png1 from "./advantages1.png";
 import Png2 from "./advantages2.png";
 import Png3 from "./advantages3.png";
+import {
+  useTranslation
+} from "react-i18next";
+
 
 const Advantages = () => {
+  const {t} = useTranslation();
+
   const advantages = [
     {
-      title: "Логистика",
-      p: "Отправка в любой регион",
+      title: t("advantages_title1"),
+      p: t("advantages_p1"),
       img: Png1,
     },
     {
-      title: "Поддержка 24/7",
-      p: "Прямая связь без бюрократических процедур",
+      title: t("advantages_title2"),
+      p: t("advantages_p3"),
       img: Png2,
     },
     {
-      title: "100% Надежность",
-      p: "Полный пакет документов",
+      title: t("advantages_title3"),
+      p: t("advantages_p3"),
       img: Png3,
     },
   ];

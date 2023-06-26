@@ -5,8 +5,13 @@ import latestSmartwatch from './img/latest-smartwatch-collection-img.png';
 import smartBand from './img/smart-band-collection-img.png';
 import vrGlasses from './img/best-collection-vr-glasses-img.png';
 import jbl from './img/jbl.webp';
+import {
+    useTranslation
+} from "react-i18next";
 
 const Collection = ({toggleShowModal}) => {
+    const {t} = useTranslation();
+
     return (
         <>
             <section className="main-section collection collection-green">
@@ -14,16 +19,15 @@ const Collection = ({toggleShowModal}) => {
                     <div className="collection__text">
                         <div>
                             <p>
-                                САМЫЕ <br />
-                                ЛУЧШИЕ ЦЕНЫ
+                                {t("collection_title_h1")}
                             </p>
                             <h2>
-                                В ДУБАИ<br />
+                                {t("collection_title_p1")}
                             </h2>
                             <div className="slider__main_btn">
                                 <button className="blue-button" onClick={toggleShowModal}>
                                     <a href="#" tabIndex="0">
-                                        <span>заказать</span>
+                                        <span>{t("collection_buy_now")}</span>
                                         <p></p>
                                     </a>
                                 </button>
@@ -44,8 +48,7 @@ const Collection = ({toggleShowModal}) => {
                     <div className="collection__text">
                         <div>
                             <p>
-                                ГАРАНТИЯ <br />
-                                НА ВЕСЬ ТОВАР
+                                {t("collection_title_h2")}
                             </p>
                             {/*<h2>*/}
                             {/*    МИРОВОЙ<br />*/}
@@ -54,7 +57,7 @@ const Collection = ({toggleShowModal}) => {
                             <div className="slider__main_btn">
                                 <button className="blue-button" onClick={toggleShowModal}>
                                     <a href="#" tabIndex="0">
-                                        <span>заказать</span>
+                                        <span>{t("collection_buy_now")}</span>
                                         <p></p>
                                     </a>
                                 </button>
@@ -69,17 +72,15 @@ const Collection = ({toggleShowModal}) => {
                     <div className="collection__text">
                         <div>
                             <p>
-                                ЛЮБОЙ<br />
-                                ОБЪЕМ
+                                {t("collection_title_h3")}
                             </p>
                             <h2>
-                                И ВСЕ<br />
-                                РЕГИОНЫ
+                                {t("collection_title_p3")}
                             </h2>
                             <div className="slider__main_btn">
                                 <button className="blue-button" onClick={toggleShowModal}>
                                     <a href="#" tabIndex="0">
-                                        <span>заказать</span>
+                                        <span>{t("collection_buy_now")}</span>
                                         <p></p>
                                     </a>
                                 </button>
@@ -100,17 +101,15 @@ const Collection = ({toggleShowModal}) => {
                 <div className="collection__text">
                     <div>
                         <p>
-                            АДАПТАЦИЯ<br />
-                            В РАМКАХ
+                            {t("collection_title_h4")}
                         </p>
                         <h2>
-                            МИРОВОЙ<br />
-                            СИТУАЦИИ
+                            {t("collection_title_p4")}
                         </h2>
                         <div className="slider__main_btn">
                             <button className="blue-button" onClick={toggleShowModal}>
                                 <a href="#" tabIndex="0">
-                                    <span>заказать</span>
+                                    <span>{t("collection_buy_now")}</span>
                                     <p></p>
                                 </a>
                             </button>

@@ -1,8 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Form.css";
 import emailjs from "emailjs-com";
+import {
+  useTranslation
+} from "react-i18next";
 
 const FormContact = () => {
+  const {t} = useTranslation();
+
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [adress, setAdress] = useState("");
@@ -32,18 +37,18 @@ const FormContact = () => {
 
   const [nameDirty, setNameDirty] = useState(false);
   const [nameError, setNameError] = useState(
-    "Поле имени не может быть пустым!"
+      t("form_error_name")
   );
   const [phoneDirty, setPhoneDirty] = useState(false);
-  const [phoneError, setPhoneError] = useState("Добавьте номер телефона!");
+  const [phoneError, setPhoneError] = useState(t("form_error_phone"));
   const [adressDirty, setAdressDirty] = useState(false);
-  const [adressError, setAdressError] = useState("Добавьте адрес!");
+  const [adressError, setAdressError] = useState(t("form_error_address"));
   const [emailDirty, setEmailDirty] = useState(false);
   const [emailError, setEmailError] = useState(
-    "Почтовый адрес не может быть пустым!"
+      t("form_error_email")
   );
   const [commentDirty, setCommentDirty] = useState(false);
-  const [commentError, setCommentError] = useState("Добавьте комментарий!");
+  const [commentError, setCommentError] = useState(t("form_error_comment"));
   const [send, setSend] = useState("");
   const [formValid, SetFormValid] = useState(false);
 
@@ -58,7 +63,7 @@ const FormContact = () => {
   const nameHandler = (e) => {
     setName(e.target.value);
     if (e.target.value.length < 2) {
-      setNameError("Некорректное имя!");
+      setNameError(t("form_error_name_uncorrected"));
     } else {
       setNameError("");
     }
@@ -86,9 +91,9 @@ const FormContact = () => {
       }
 
       if (countOfIncorrectedSimbols >= 1) {
-        setPhoneError("Ввели некорректный символ в поле телефона!");
+        setPhoneError();
       } else if (countOfNumbersInValue < 7 && lengthOfNumber < 20) {
-        setPhoneError("Некорректный номер телефона!");
+        setPhoneError(t("form_error_phone_uncorrected_symbol"));
       } else {
         setPhoneError("");
       }
@@ -135,7 +140,7 @@ const FormContact = () => {
   const userAdress = (e) => {
     setAdress(e.target.value);
     if (e.target.value.length < 5) {
-      setAdressError("Некорректный адрес!");
+      setAdressError(t("form_error_address_uncorrected"));
     } else {
       setAdressError("");
     }
@@ -147,7 +152,7 @@ const FormContact = () => {
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if (!re.test(String(e.target.value).toLowerCase())) {
-      setEmailError("Некорректный email!");
+      setEmailError(t("form_error_email_uncorrected"));
     } else {
       setEmailError("");
     }
@@ -157,7 +162,7 @@ const FormContact = () => {
     setComment(e.target.value);
 
     if (e.target.value.length < 1) {
-      setCommentError("Некорректный комментарий!");
+      setCommentError(t("form_error_comment_uncorrected"));
     } else {
       setCommentError("");
     }
@@ -185,13 +190,13 @@ const FormContact = () => {
   return (
     <div className="form-buy">
       <div>
-        <p className="fs62">Оформление заказа онлайн</p>
+        <p className="fs62">{t("form_header")}</p>
         <hr className="line-hr" />
       </div>
       <form ref={form} onSubmit={handleSubmit}>
         <div className="form-buy__row">
           <div>
-            <label htmlFor="name">Ваше имя: *</label>
+            <label htmlFor="name">{t("form_value_name")}: *</label>
             <input
               type="text"
               id="name"
@@ -201,7 +206,7 @@ const FormContact = () => {
             />
           </div>
           <div>
-            <label htmlFor="phone">Телефон: *</label>
+            <label htmlFor="phone">{t("form_value_phone")}: *</label>
             <input
               type="phone"
               id="phone"
@@ -223,7 +228,7 @@ const FormContact = () => {
             />
           </div>
           <div>
-            <label htmlFor="address">Адрес: *</label>
+            <label htmlFor="address">{t("form_value_address")}: *</label>
             <input
               type="address"
               id="address"
@@ -235,7 +240,7 @@ const FormContact = () => {
         </div>
         <div className="form-buy__row form-buy__row-comment">
           <div>
-            <label htmlFor="comment">Комментарии к заказу: *</label>
+            <label htmlFor="comment">{t("form_value_comment")}: *</label>
             <input
               type="comment"
               id="comment"
@@ -249,10 +254,10 @@ const FormContact = () => {
         <div className="slider__main_btn">
           <button
             disabled={!formValid}
-            onClick={() => alert("Заказ отправлкен!")}
+            onClick={() => alert("Заказ отправлен!")}
           >
             <a tabIndex="0">
-              <span>Оформить заказ</span>
+              <span>{t("form_value_order")}</span>
               <p></p>
             </a>
           </button>
