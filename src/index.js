@@ -10,6 +10,7 @@ import { BrowserRouter } from "react-router-dom";
 // import HttpApi from "i18next-http-backend";
 import { Suspense } from "react";
 import "./18n";
+import LoadingPage from "./components/Content/LodaingPage/LoadingPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -30,7 +31,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //   });
 
 root.render(
-  <Suspense fallback={<div>Loading..</div>}>
+  <Suspense fallback={<LoadingPage />}>
     <BrowserRouter>
       <React.StrictMode>
         <App />
