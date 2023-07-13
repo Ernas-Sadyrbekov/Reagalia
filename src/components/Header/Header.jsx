@@ -5,7 +5,9 @@ import { IconButton, MenuItem, Tooltip } from "@mui/material";
 import i18next from "i18next";
 import IconsSocial from "../Content/IconsSocial";
 import { useTranslation } from "react-i18next";
-
+import RU from "./free-icon-russia-555451.png";
+import EN from "./free-icon-united-states-of-america-940207.png";
+import { Opacity } from "@mui/icons-material";
 const Header = ({ toggleShowModal }) => {
   function runOnScroll() {
     const header = document.getElementsByTagName("header")[0];
@@ -88,18 +90,7 @@ const Header = ({ toggleShowModal }) => {
                 </MenuItem>
               </Tooltip>
             ))} */}
-            <button
-              style={{ color: "white" }}
-              onClick={() => changeLanguage("en")}
-            >
-              EN
-            </button>
-            <button
-              style={{ color: "white" }}
-              onClick={() => changeLanguage("ru")}
-            >
-              RU
-            </button>
+
             <ul className="navigation">
               <li className="fw400" onClick={scrollToTop}>
                 {" "}
@@ -122,8 +113,33 @@ const Header = ({ toggleShowModal }) => {
             </ul>
 
             <div className="header__contacts">
-              <p>+971554870201</p>
-              <IconsSocial />
+              <div className="translator">
+                <div
+                  style={{
+                    width: "30px",
+                    height: "20px",
+                    background: "black",
+                  }}
+                >
+                  <Link onClick={() => changeLanguage("en")}>
+                    <img src={EN} />
+                  </Link>
+                </div>
+                <div
+                  style={{
+                    width: "30px",
+                    height: "20px",
+                  }}
+                >
+                  <Link onClick={() => changeLanguage("ru")}>
+                    <img src={RU} />
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <p>+971554870201</p>
+                <IconsSocial />
+              </div>
             </div>
 
             <div className="menu-wrap">

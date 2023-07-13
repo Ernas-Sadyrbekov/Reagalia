@@ -23,7 +23,9 @@ header {
 .navigation > li > a {
   font-weight: 500 !important;
 }
-
+.header__contacts {
+  display: flex;
+}
 .header__contacts > p {
   font-weight: 400;
   font-size: 16px;
@@ -171,6 +173,10 @@ header .navigation li:hover {
   font-size: 1.5rem;
   padding: 1rem;
 }
+.translator {
+  margin-top: 5px;
+  margin-right: 5px;
+}
 
 @media (max-width: 810px) {
   header .header_container {
@@ -187,5 +193,12 @@ header .navigation li:hover {
 
   .icon-social {
     justify-content: space-around;
+  }
+  .translator {
+    display: flex;
+    margin-top: 15px;
+  }
+  .translator div {
+    margin-right: 5px;
   }
 }
