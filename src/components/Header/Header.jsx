@@ -5,8 +5,8 @@ import { IconButton, MenuItem, Tooltip } from "@mui/material";
 import i18next from "i18next";
 import IconsSocial from "../Content/IconsSocial";
 import { useTranslation } from "react-i18next";
-import RU from "./free-icon-russia-555451.png";
-import EN from "./free-icon-united-states-of-america-940207.png";
+import RU from "./russia.png";
+import EN from "./united-states.png";
 import { Opacity } from "@mui/icons-material";
 const Header = ({ toggleShowModal }) => {
   function runOnScroll() {
@@ -116,9 +116,9 @@ const Header = ({ toggleShowModal }) => {
               <div className="translator">
                 <div
                   style={{
-                    width: "30px",
+                    width: "29px",
                     height: "20px",
-                    background: "black",
+                    marginBottom: "10px",
                   }}
                 >
                   <Link onClick={() => changeLanguage("en")}>
